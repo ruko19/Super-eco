@@ -3,7 +3,7 @@ import Banner from "../components/Header/Banner"
 
 const Header = () => {
     return (
-        <header>
+        <header className="mb-36">
             <LoginNav />
             <Banner />
         </header>
