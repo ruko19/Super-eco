@@ -1,1 +1,0 @@
-# RRPO_APP_DEMO_DAY
