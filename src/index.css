@@ -33,17 +33,9 @@ li {
 .txt-primary {
   color: #91b739;
 }
-
-.bg-white {
-  background-color: #ffffff;
-}
-.txt-white {
-  color: #ffffff;
-}
-
-.bg-black {
-  background-color: #000000;
-}
-.text-black {
-  color: #000000;
+/*hero*/
+.hero {
+  background-image: url(https://res.cloudinary.com/dwvchf8al/image/upload/v1677614722/Demo_day_RROP/banner_gtahgz.png);
+  width: 100%;
+  height: 80vh;
 }
