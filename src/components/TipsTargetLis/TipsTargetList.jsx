@@ -4,14 +4,17 @@ import TipTarget from '../TipTarget/TipTarget'
 const TipsTargetList = () => {
     const infoTargetTips = [
         {
+            "id": "1",
             "title": "La importancia de saber separar.",
             "img": "../../../public/img 1.jpg"
         },
         {
+            "id": "2",
             "title": "La importancia de saber separar.",
             "img": "../../../public/img 1.jpg"
         },
         {
+            "id": "3",
             "title": "La importancia de saber separar.",
             "img": "../../../public/img 1.jpg"
         }
@@ -23,7 +26,7 @@ const TipsTargetList = () => {
             {
                 infoTargetTips.map((e) => (
 
-                    <TipTarget />
+                    <TipTarget key={e.id} />
                 ))
             }
 

@@ -1,3 +1,4 @@
+import EventsComponents from "../components/EventsComponents/EventsComponents";
 import RecycleTargetList from "../components/RecycleTargetList/RecycleTargetList";
 
 import TipsTargetList from "../components/TipsTargetLis/TipsTargetList";
@@ -30,8 +31,12 @@ const Home = () => {
                 </section>
 
 
-                <section>
+                <section className="mb-40 ">
                     <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-lime-500">EVENTOS</span> <br /> MÁS CERCANOS</h2>
+                    <div className="  container relative">
+                        <EventsComponents />
+
+                    </div>
 
                 </section>
             </div>
