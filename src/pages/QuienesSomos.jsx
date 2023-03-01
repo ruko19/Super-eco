@@ -1,5 +1,6 @@
 import ReactPlayer from "react-player"
 
+
 const QuienesSomos = () => {
     return (
         <div className="container flex flex-col mx-auto items-center justify-center">
