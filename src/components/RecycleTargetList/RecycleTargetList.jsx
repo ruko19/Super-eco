@@ -32,7 +32,7 @@ const RecycleTargetList = () => {
 
     ]
     return (
-        <div className='w-full  bg-lime-500 grid grid-cols-2 mt-40'>
+        <div className='w-full  bg-lime-500 grid lg:grid-cols-2 mt-40 sm:grid-cols-1'>
             {
                 infoTarget.map((e) => (
                     <RecycleTarget key={e.id} icon={e.icon} title={e.title} description={e.description}

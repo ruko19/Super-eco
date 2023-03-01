@@ -1,7 +1,10 @@
 import EventsComponents from "../components/EventsComponents/EventsComponents";
 import RecycleTargetList from "../components/RecycleTargetList/RecycleTargetList";
+import TipDayList from "../components/TipDayList/TipDayList";
 
 import TipsTargetList from "../components/TipsTargetLis/TipsTargetList";
+import { TbClick } from "react-icons/tb";
+import FormInit from "../components/FormInit/FormInit";
 
 
 const Home = () => {
@@ -19,7 +22,6 @@ const Home = () => {
                 </section>
 
 
-
                 <section className="relative" >
                     <h2 className=" mt-40 text-7xl font-bold mb-40 "><span className="text-lime-500">EL RECICLAJE </span>TODO <br /> LO QUE DEBES SABER</h2>
 
@@ -35,6 +37,27 @@ const Home = () => {
                     <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-lime-500">EVENTOS</span> <br /> MÁS CERCANOS</h2>
                     <div className="  container relative">
                         <EventsComponents />
+                    </div>
+                </section>
+
+
+                <section>
+                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-lime-500" >BLOG</span> <br />ÚLTIMAS ENTRADA</h2>
+                    <div className="container">
+                        <TipDayList />
+                    </div>
+                    <button
+                        className=" bg-lime-500 px-6 py-2 rounded-xl mt-14 text-white flex  items-center gap-4 mx-auto">Más articulos aquí <TbClick className="text-3xl" />
+                    </button>
+                </section>
+
+
+                <section className="container grid grid-cols-2 gap-28 p-20">
+                    <div>
+                        <h2 className="text-6xl text-left font-bold"> <span className="text-lime-500">INICIATIVAS</span>  AMBIENTALES</h2>
+                        <p className="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus molestiae exercitationem esse, in distinctio ad.</p>
+                        <FormInit />
+
 
                     </div>
 

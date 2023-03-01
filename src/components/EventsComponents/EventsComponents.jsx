@@ -9,7 +9,7 @@ const EventsComponents = () => {
                 <img src={imgEvent} alt="" />
             </figure>
             <div className=' relative p-5'>
-                <div className='absolute -left-14 flex gap-10 flex-col'>
+                <div className='w-full  absolute -left-14 flex gap-10 flex-col'>
                     <EventTarget />
                     <EventTarget />
                     <EventTarget />
