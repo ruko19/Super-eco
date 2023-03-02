@@ -1,32 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import imgEvent from "../../../public/event1.jpg"
 import EventTarget from '../EventTarget/EventTarget'
-import { getData } from '../../api/firebaseConfig'
+
+import useEventos from '../../hooks/useEventos'
 
 const EventsComponents = () => {
 
-    const [evento, setEvento] = useState([]);
-
-    const getEvento = async () => {
-        try {
-            const res = await getData();
-            setEvento(res.data)
-        } catch (error) {
-
-        }
-    }
-
-    useEffect(() => {
-
-        getEvento()
-
-    }, [])
-
-
-
-    console.log(evento);
-
-
+    const { eventos } = useEventos();
 
     return (
         <div className='grid grid-cols-2'>
@@ -37,7 +17,7 @@ const EventsComponents = () => {
                 <div className='w-full  absolute -left-14 flex gap-10 flex-col'>
 
                     {
-                        evento.map((e) => (
+                        eventos.map((e) => (
 
                             <EventTarget key={e.id} data={e} />
                         ))
