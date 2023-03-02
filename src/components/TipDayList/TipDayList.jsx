@@ -6,14 +6,17 @@ const TipDayList = () => {
 
     const infoTipDay = [
         {
+            "id": 1,
             "img": "",
             "title": "Tip del dia"
         },
         {
+            "id": 2,
             "img": "",
             "title": "Tip del dia"
         },
         {
+            "id": 3,
             "img": "",
             "title": "Tip del dia"
         }
@@ -26,7 +29,7 @@ const TipDayList = () => {
             {
                 infoTipDay.map((e) => (
 
-                    <TipDay />
+                    <TipDay key={e.id} />
                 ))
             }
 

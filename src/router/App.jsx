@@ -6,8 +6,16 @@ import Eventos from "../pages/Eventos"
 import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 
+// import redux toolkit
+// import { store } from "../app/store"
+// import { Provider } from 'react-redux'
+
 function App() {
   return (
+
+
+
+
     <BrowserRouter>
       <Layout>
         <Routes>
@@ -19,6 +27,8 @@ function App() {
         </Routes>
       </Layout>
     </BrowserRouter>
+
+
   )
 }
 
