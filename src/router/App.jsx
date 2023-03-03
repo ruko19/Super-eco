@@ -5,6 +5,7 @@ import QuienesSomos from "../pages/QuienesSomos"
 import Eventos from "../pages/Eventos"
 import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
+import LoginAdmin from "../pages/LoginAdmin"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/login-admin" element={<LoginAdmin />} />
         </Routes>
       </Layout>
     </BrowserRouter>
