@@ -2,7 +2,7 @@ import React from 'react'
 import { FaRecycle } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 
-const EventTarget = () => {
+const EventTarget = ({ data }) => {
 
 
     return (
@@ -13,17 +13,17 @@ const EventTarget = () => {
             </figure>
             <div className=' w-full flex  gap-12 hover:bg-lime-500  hover:text-white rounded-xl'>
                 <div className='flex flex-col '>
-                    <p className='text-lime-500 text-6xl'>30</p>
-                    <p className='text-lime-500 text-4xl'>mar</p>
+                    <p className='text-lime-500 text-6xl'>{data.dia}</p>
+                    <p className='text-lime-500 text-4xl'>{data.mes}</p>
                 </div>
                 <div className='text-left '>
-                    <p className='font-light text-gray-400'>Organizador <span className='text-lime-500'>RROP</span> </p>
-                    <h3 className='text-3xl'>CÓMO RECICLAR</h3>
+                    <p className='font-light text-gray-400'>Organizador <span className='text-lime-500'>{data.organizador}</span> </p>
+                    <h3 className='text-3xl uppercase'>{data.titulo}</h3>
                     <div className='flex items-center'>
                         <figure>
-                            <CiLocationOn />
+
                         </figure>
-                        <p>Teatro Medellin</p>
+                        <p>{data.lugar}</p>
                     </div>
                 </div>
             </div>
