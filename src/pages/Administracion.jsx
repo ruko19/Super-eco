@@ -2,7 +2,7 @@ import EventosComponente from "../components/CrudEventos/EventosComponente"
 // import { getData } from "../api/firebaseConfig";
 import { useDispatch } from "react-redux"
 import { useEffect } from "react";
-import { fetchEventos } from "../features/eventos/eventosSlice";
+import { fetchEventos } from "../api/firebaseConfig";
 
 
 

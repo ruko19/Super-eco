@@ -6,8 +6,7 @@ import Eventos from "../pages/Eventos"
 import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
-import { EventosProvider } from "../context/EventosContext"
-import Administracion from "../pages/Administracion"
+
 
 
 
@@ -17,7 +16,7 @@ import Administracion from "../pages/Administracion"
 
 function App() {
   return (
-    <EventosProvider>
+    <Provider store={store}>
 
       <BrowserRouter>
         <Layout>
@@ -32,7 +31,8 @@ function App() {
           </Routes>
         </Layout>
       </BrowserRouter>
-    </EventosProvider>
+
+    </Provider>
 
 
   )
