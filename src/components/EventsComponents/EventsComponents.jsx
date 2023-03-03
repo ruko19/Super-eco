@@ -1,12 +1,26 @@
 import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import imgEvent from "../../../public/event1.jpg"
+import { getData } from '../../api/firebaseConfig'
+import { fetchEventos } from '../../features/eventos/eventosSlice'
 import EventTarget from '../EventTarget/EventTarget'
 
-import useEventos from '../../hooks/useEventos'
+
 
 const EventsComponents = () => {
 
-    const { eventos } = useEventos();
+    const { eventosList: eventos } = useSelector(state => state.eventos)
+
+
+    const distpatch = useDispatch();
+
+    useEffect(() => {
+        distpatch(fetchEventos())
+
+    }, [distpatch])
+
+
+
 
     return (
         <div className='grid grid-cols-2'>
