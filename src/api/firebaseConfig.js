@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, getDocs } from "firebase/firestore"
+// import { getEventos } from "../features/eventos/eventosSlice";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,7 +19,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 
@@ -27,7 +28,8 @@ const analytics = getAnalytics(app);
 
 export const db = getFirestore(app);
 
-export const getData = async () => {
+
+export const getData = () => async (dispatch) => {
     const snapshot = await getDocs(collection(db, "eventos"));
     const data = [];
 
@@ -36,6 +38,7 @@ export const getData = async () => {
         data.push({ ...evento })
     })
 
-    return { data }
+    // dispatch(getEventos(data))
+    return data
 
 }

@@ -1,8 +1,21 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchEventos } from "../features/eventos/eventosSlice";
 import useEventos from "../hooks/useEventos";
 
 const Eventos = () => {
 
-  const { eventos } = useEventos()
+  const { eventosList: eventos } = useSelector(state => state.eventos)
+
+
+  const distpatch = useDispatch();
+
+  useEffect(() => {
+    distpatch(fetchEventos())
+
+  }, [distpatch])
+
+
   return (
     <div className="container ">
       {
