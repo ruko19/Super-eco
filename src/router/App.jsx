@@ -28,6 +28,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
+            <Route path="/administracion" element={<Administracion />} />
           </Routes>
         </Layout>
       </BrowserRouter>
