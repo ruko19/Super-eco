@@ -19,7 +19,6 @@ const LoginAdmin = () => {
     }, [])
 
 
-
     return (
         <div className='container'>
             <LoginAdminComponent />

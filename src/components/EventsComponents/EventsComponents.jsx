@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import imgEvent from "../../../public/event1.jpg"
-import { getData } from '../../api/firebaseConfig'
-import { fetchEventos } from '../../features/eventos/eventosSlice'
+
+import { fetchEventos } from '../../api/firebaseConfig'
 import EventTarget from '../EventTarget/EventTarget'
 
 
