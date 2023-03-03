@@ -7,6 +7,7 @@ import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
 import { EventosProvider } from "../context/EventosContext"
+import Administracion from "../pages/Administracion"
 
 
 // import redux toolkit
@@ -26,6 +27,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
+            <Route path="/administracion" element={<Administracion />} />
           </Routes>
         </Layout>
       </BrowserRouter>
