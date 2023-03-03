@@ -55,7 +55,9 @@ const Home = () => {
                 <section className="container grid grid-cols-2 gap-28 p-20">
                     <div>
                         <h2 className="text-6xl text-left font-bold"> <span className="text-lime-500">INICIATIVAS</span>  AMBIENTALES</h2>
-                        <p className="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus molestiae exercitationem esse, in distinctio ad.</p>
+                        <p className="text-left">Inscribete a nuestras iniciativas y recibe en tu correo electronico nuestros proximos eventos y contenido exclusivo sobre el reciclaje y el medio
+                            ambiente.
+                            JUNTOS LO PODEMOS LOGRAR </p>
                         <FormInit />
 
 

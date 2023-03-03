@@ -6,10 +6,6 @@ import Eventos from "../pages/Eventos"
 import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
-
-
-
-
 import { store } from "../app/store"
 import { Provider } from 'react-redux'
 import Administracion from "../pages/Administracion"
@@ -17,7 +13,6 @@ import Administracion from "../pages/Administracion"
 function App() {
   return (
     <Provider store={store}>
-
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -27,14 +22,10 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
-            <Route path="/administracion" element={<Administracion />} />
           </Routes>
         </Layout>
       </BrowserRouter>
-
     </Provider>
-
-
   )
 }
 

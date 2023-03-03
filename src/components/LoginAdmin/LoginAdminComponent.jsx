@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Administracion from '../../pages/Administracion'
 import { Link } from 'react-router-dom'
 
 const LoginAdminComponent = () => {
