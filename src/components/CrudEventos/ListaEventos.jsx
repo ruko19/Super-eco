@@ -1,8 +1,22 @@
-import useEventos from "../../hooks/useEventos";
+import { useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { fetchEventos } from "../../api/firebaseConfig"
+
+
 
 const ListaEventos = () => {
 
-    const { eventos } = useEventos();
+    const { eventosList: eventos } = useSelector(state => state.eventos)
+
+    const distpatch = useDispatch();
+
+    useEffect(() => {
+        distpatch(fetchEventos())
+
+    }, [distpatch])
+
+
+
 
     return (
         <div className='md:w-1/2 text-center md:h-96 overflow-y-scroll'>

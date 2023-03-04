@@ -6,13 +6,11 @@ import Eventos from "../pages/Eventos"
 import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
-
-
-
-
+import Administracion from "../pages/Administracion"
 import { store } from "../app/store"
 import { Provider } from 'react-redux'
-import Administracion from "../pages/Administracion"
+
+
 
 function App() {
   return (

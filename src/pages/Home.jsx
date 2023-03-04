@@ -13,7 +13,10 @@ const Home = () => {
             <div className="w-full text-center">
                 <div className="max-w-screen-lg m-auto">
                     <h2 className="text-7xl font-bold mb-11">¿QUE HACEMOS <br />Y COMO LO <span className="text-lime-500">HACEMOS ?</span></h2>
-                    <p className="leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi optio iusto tempore minima quam expedita? Autem molestiae architecto quis adipisci est! Repellendus, fugit accusamus. Alias, eaque unde? Laudantium, voluptas.</p>
+                    <p className="leading-10"> <span className="text-lime-500">RROP</span>  es una organizacion sin animo de lucro que busca generar un cambio en las personas e influir en la sociedad,
+                        su comportamiento y en su estilo de vida, a travez de la educacion, el arte y la cultura sobre la importancia del reciclaje
+                        y el cuidado del medio ambiente para poder lograr un futuro sostenible  .
+                    </p>
                 </div>
 
 

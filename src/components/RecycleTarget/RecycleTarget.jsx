@@ -3,12 +3,12 @@ import React from 'react'
 const RecycleTarget = ({ icon, title, description }) => {
 
     return (
-        <div className='container flex items-center text-white p-16'>
-            <figure>
-                <img src={icon} alt="" />
+        <div className='container  text-white grid grid-cols-12 items-center p-8'>
+            <figure className='col-span-2'>
+                <img className='w-full ' src={icon} alt="" />
             </figure>
-            <div className='text-left'>
-                <h2 className='text-4xl'>{title}</h2>
+            <div className='text-left col-span-10'>
+                <h2 className='text-4xl mb-7'>{title}</h2>
                 <p>{description}</p>
             </div>
 

@@ -5,18 +5,18 @@ const TipsTargetList = () => {
     const infoTargetTips = [
         {
             "id": "1",
-            "title": "La importancia de saber separar.",
-            "img": "../../../public/img 1.jpg"
+            "title": "¿QUE TIRAR EN CADA CONTENEDOR?",
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_300/v1677771246/recycle-g572ee4c4f_1280_frsols.jpg"
         },
         {
             "id": "2",
-            "title": "La importancia de saber separar.",
-            "img": "../../../public/img 1.jpg"
+            "title": "LA IMPORTANCIA DE SABER SEPARAR",
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_400/v1677772970/hands-gaf2142a73_1280_o6jqi5.jpg"
         },
         {
             "id": "3",
-            "title": "La importancia de saber separar.",
-            "img": "../../../public/img 1.jpg"
+            "title": "¿COMO AFECTA LA BASURA EN EL MEDIO AMBIENTE?",
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_250,w_350/v1677773542/plastic-waste-g884b601d8_1280_evnuhv.jpg"
         }
     ]
 
@@ -26,7 +26,7 @@ const TipsTargetList = () => {
             {
                 infoTargetTips.map((e) => (
 
-                    <TipTarget key={e.id} />
+                    <TipTarget key={e.id} data={e} />
                 ))
             }
 
