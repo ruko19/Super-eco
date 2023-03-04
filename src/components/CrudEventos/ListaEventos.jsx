@@ -15,7 +15,7 @@ const ListaEventos = () => {
 
     }, [distpatch])
 
-
+    const eventosI = [...eventos].reverse()
 
 
 
@@ -23,7 +23,7 @@ const ListaEventos = () => {
     return (
         <div className='md:w-1/2 text-center md:h-96 overflow-y-scroll'>
 
-            {eventos.map(e => (
+            {eventosI.map(e => (
                 <div className='text-left shadow-md max-w-xl p-8 rounded-lg' key={e.id}>
                     <p className='font-light'>id: <span className='font-medium uppercase'>{e.id}</span></p>
                     <p className='font-light'>Nombre evento: <span className='font-medium uppercase'>{e.titulo}</span></p>
