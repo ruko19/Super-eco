@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { FaRecycle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEventos } from "../api/firebaseConfig";
 
@@ -20,14 +21,9 @@ const Eventos = () => {
       {
         eventos.map((e) => (
           <div key={e.id} className="mb-20 flex ">
-            <img
-              className="bg-lime-500 rounded-full "
-              src={
-                "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_145,w_150/v1677626378/recycling-g1a554440e_1280_k1huzv.png"
-              }
-              alt="icono"
-              width="70"
-            />
+            <figure className='inline-block bg-lime-500 p-5 rounded-full text-white border-8 border-white'>
+              <FaRecycle className='text-7xl' />
+            </figure>
 
             <div className="ml-10  ">
               <p className="text-lime-500 text-4xl  ">

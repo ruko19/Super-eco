@@ -6,6 +6,8 @@ import TipsTargetList from "../components/TipsTargetLis/TipsTargetList";
 import { TbClick } from "react-icons/tb";
 import FormInit from "../components/FormInit/FormInit";
 
+import imgheroe from "../../public/mascotaHero.png"
+
 
 const Home = () => {
     return (
@@ -62,7 +64,9 @@ const Home = () => {
                             ambiente.
                             JUNTOS LO PODEMOS LOGRAR </p>
                         <FormInit />
-
+                    </div>
+                    <div className="w-full grid place-items-center">
+                        <img width="350" src={imgheroe} alt="" />
 
                     </div>
 

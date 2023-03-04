@@ -20,7 +20,8 @@ const EventsComponents = () => {
     }, [distpatch])
 
 
-
+    const eventosUlitmos3 = eventos.slice(-3);
+    console.log(eventosUlitmos3);
 
     return (
         <div className='grid grid-cols-2'>
@@ -31,7 +32,7 @@ const EventsComponents = () => {
                 <div className='w-full  absolute -left-14 flex gap-10 flex-col'>
 
                     {
-                        eventos.map((e) => (
+                        eventosUlitmos3.map((e) => (
 
                             <EventTarget key={e.id} data={e} />
                         ))
