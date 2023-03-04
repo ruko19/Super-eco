@@ -4,11 +4,13 @@ const FormularioEditar = () => {
     return (
         <div className="md:w-1/3 text-center">
             <form className='flex flex-col'>
+                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Id' />
+
                 <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Organizador' />
 
-                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="date" placeholder='Fecha' />
+                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Día' />
 
-                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Lugar' />
+                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Mes' />
 
                 <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Nombre evento' />
 
