@@ -15,7 +15,6 @@ import { Provider } from 'react-redux'
 function App() {
   return (
     <Provider store={store}>
-
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -25,14 +24,10 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
-            <Route path="/administracion" element={<Administracion />} />
           </Routes>
         </Layout>
       </BrowserRouter>
-
     </Provider>
-
-
   )
 }
 

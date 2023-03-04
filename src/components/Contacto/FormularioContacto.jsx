@@ -5,7 +5,7 @@ const FormularioContacto = () => {
         <div className="md:w-1/3">
             <div className='text-left mb-12'>
                 <h3 className='text-lime-500 font-bold uppercase text-5xl mb-3'>Contáctanos</h3>
-                <p className='text-black font-light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                <p className='text-black'>Comparte tu sugerencia, queja, reclamo o ideas que tengas o para recibir información acerca de nuestros eventos.</p>
             </div>
             <form className='flex flex-col'>
                 <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Nombre' />
