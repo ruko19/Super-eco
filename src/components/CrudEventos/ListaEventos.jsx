@@ -17,7 +17,7 @@ const ListaEventos = () => {
 
     const eventosI = [...eventos].reverse()
 
-    const eventosI = [...eventos].reverse()
+    eventosI
 
 
 
