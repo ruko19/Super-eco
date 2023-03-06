@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, getDocs, setDoc, addDoc, Firestore } from "firebase/firestore";
-import { getEventos } from "../features/eventos/eventosSlice";
+
 // import { getEventos } from "../features/eventos/eventosSlice";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -25,34 +25,33 @@ const analytics = getAnalytics(app);
 
 // export const database = getFirestore(app);
 
-export const db = getFirestore(app);
-export const db2 = getFirestore()
+const db = getFirestore(app);
 
-// export const getData = () => async (dispatch) => {
-//     const snapshot = await getDocs(collection(db, "eventos"));
-//     const data = [];
 
-//     snapshot.forEach(doc => {
-//         const evento = doc.data()
-//         data.push({ ...evento })
-//     })
-
-//     // dispatch(getEventos(data))
-//     return data
-
-// }
-
-export const fetchEventos = () => async (dispatch) => {
+export const getData = async () => {
   const snapshot = await getDocs(collection(db, "eventos"));
   const data = [];
 
-  snapshot.forEach((doc) => {
-    const evento = doc.data();
-    data.push({ ...evento });
-  });
+  snapshot.forEach(doc => {
+    const evento = doc.data()
+    data.push({ ...evento })
+  })
 
-  dispatch(getEventos(data));
-};
+  return data
+
+}
+
+// export const fetchEventos = () => async (dispatch) => {
+//   const snapshot = await getDocs(collection(db, "eventos"));
+//   const data = [];
+
+//   snapshot.forEach((doc) => {
+//     const evento = doc.data();
+//     data.push({ ...evento });
+//   });
+
+//   dispatch(getEventos(data));
+// };
 
 
 

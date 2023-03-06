@@ -15,9 +15,9 @@ const Home = () => {
             <div className="w-full text-center">
                 <div className="max-w-screen-lg m-auto">
                     <h2 className="text-7xl font-bold mb-11">¿QUE HACEMOS <br />Y COMO LO <span className="text-lime-500">HACEMOS ?</span></h2>
-                    <p className="leading-10"> <span className="text-lime-500">RROP</span>  es una organizacion sin animo de lucro que busca generar un cambio en las personas e influir en la sociedad,
+                    <p className="leading-10 px-10 md:px-0"> <span className="text-lime-500">RROP</span>  es una organizacion sin animo de lucro que busca generar un cambio en las personas e influir en la sociedad,
                         su comportamiento y en su estilo de vida, a travez de la educacion, el arte y la cultura sobre la importancia del reciclaje
-                        y el cuidado del medio ambiente para poder lograr un futuro sostenible  .
+                        y el cuidado del medio ambiente para poder lograr un futuro sostenible.
                     </p>
                 </div>
 
@@ -57,7 +57,7 @@ const Home = () => {
                 </section>
 
 
-                <section className="container grid grid-cols-2 gap-28 p-20">
+                <section className="container grid grid-cols-1 md:grid-cols-2 gap-28 p-20">
                     <div>
                         <h2 className="text-6xl text-left font-bold"> <span className="text-lime-500">INICIATIVAS</span>  AMBIENTALES</h2>
                         <p className="text-left">Inscribete a nuestras iniciativas y recibe en tu correo electronico nuestros proximos eventos y contenido exclusivo sobre el reciclaje y el medio

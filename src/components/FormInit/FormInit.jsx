@@ -3,7 +3,7 @@ import React from 'react'
 const FormInit = () => {
     return (
 
-        <form className='flex flex-col' action="">
+        <form className=' mt-8 flex flex-col border p-10 rounded-lg shadow-md' action="">
             <input className='border mt-9 p-6 rounded-2xl outline-none' type="text" placeholder='Nombre' />
             <input className='border mt-9 p-6 rounded-2xl outline-none' type="email" placeholder='Correo' />
             <input className='border mt-9 p-6 rounded-2xl outline-none' type="text" placeholder='Selecciona la Iniciativa' />

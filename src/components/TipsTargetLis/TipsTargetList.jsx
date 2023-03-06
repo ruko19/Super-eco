@@ -22,7 +22,7 @@ const TipsTargetList = () => {
 
     return (
 
-        <div className='w-full grid lg:grid-cols-3 gap-40 sm:grid-cols-1'>
+        <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 gap-20 sm:grid-cols-1 '>
             {
                 infoTargetTips.map((e) => (
 

@@ -1,35 +1,36 @@
 
-// import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 
-// import { getData } from "../api/firebaseConfig";
+import { getData } from "../api/firebaseConfig";
 
-// export const EventosContext = createContext()
+export const EventosContext = createContext()
 
 
 
-// export const EventosProvider = ({ children }) => {
+export const EventosProvider = ({ children }) => {
 
-//     const [eventos, setEventos] = useState([]);
+    const [eventos, setEventos] = useState([]);
 
-//     const getEventos = async () => {
-//         try {
-//             const res = await getData();
-//             setEventos(res.data)
-//         } catch (error) {
+    const getEventos = async () => {
+        try {
+            const res = await getData();
+            setEventos(res)
+        } catch (error) {
 
-//         }
-//     }
+        }
+        console.log(eventos);
+    }
 
-//     useEffect(() => {
+    useEffect(() => {
 
-//         getEventos()
+        getEventos()
 
-//     }, [])
+    }, [])
 
-//     return (
-//         <EventosContext.Provider value={{ eventos, getEventos }}>
-//             {children}
-//         </EventosContext.Provider>
-//     )
+    return (
+        <EventosContext.Provider value={{ eventos }}>
+            {children}
+        </EventosContext.Provider>
+    )
 
-// }
+}

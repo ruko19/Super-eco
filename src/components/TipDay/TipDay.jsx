@@ -3,7 +3,7 @@ import img2 from "../../../public/img2.jpg"
 
 const TipDay = () => {
     return (
-        <div>
+        <div className='shadow-lg'>
             <figure>
                 <img src={img2} alt="" />
             </figure>

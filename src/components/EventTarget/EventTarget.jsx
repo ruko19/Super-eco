@@ -5,9 +5,11 @@ import { CiLocationOn } from "react-icons/ci";
 const EventTarget = ({ data }) => {
 
 
+
+
     return (
 
-        <div className='flex items-center  gap-12 '>
+        <div className='flex items-center  gap-12  shadow-sm  rounded-lg  '>
             <figure className='inline-block bg-lime-500 p-5 rounded-full text-white border-8 border-white'>
                 <FaRecycle className='text-7xl' />
             </figure>

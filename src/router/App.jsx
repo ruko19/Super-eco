@@ -7,14 +7,14 @@ import Blog from "../pages/Blog"
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
 import Administracion from "../pages/Administracion"
-import { store } from "../app/store"
-import { Provider } from 'react-redux'
+import { EventosProvider } from "../context/EventosContext"
+
 
 
 
 function App() {
   return (
-    <Provider store={store}>
+    <EventosProvider>
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -27,7 +27,8 @@ function App() {
           </Routes>
         </Layout>
       </BrowserRouter>
-    </Provider>
+    </EventosProvider>
+
   )
 }
 
