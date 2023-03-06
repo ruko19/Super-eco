@@ -22,11 +22,11 @@
 
 //             });
 
-//         },
+        },
 
-//     }
+    }
 
-// })
+})
 
-// export const { getEventos, addEventos } = eventosSlice.actions
-// export default eventosSlice.reducer
+export const { getEventos, addEventos } = eventosSlice.actions
+export default eventosSlice.reducer

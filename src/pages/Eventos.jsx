@@ -27,14 +27,14 @@ const Eventos = () => {
               {e.mes}
             </p>
           </div>
-          <div className="border-l-4 ml-20 hover:bg-lime-500 w-full  rounded-lg ">
-            <h6 className="ml-10 text-3xl text-gray-400">
-              Organizador <span className="text-lime-500">{e.organizador}</span>
+          <div className="ml-20 group hover:bg-lime-500 w-full  rounded-lg py-3">
+            <h6 className="ml-10 text-3xl text-gray-400 group-hover:text-white">
+              Organizador <span className="text-lime-500 group-hover:text-white">{e.organizador}</span>
             </h6>
-            <p className="text-4xl ml-10 font-bold text-black mt-1 uppercase">
+            <p className="text-4xl ml-10 font-bold text-black mt-1 uppercase group-hover:text-white">
               {e.titulo}
             </p>
-            <p className=" ml-10 text-2xl text-gray-800 ">{e.lugar}</p>
+            <p className=" ml-10 text-2xl text-gray-800 group-hover:text-white">{e.lugar}</p>
           </div>
         </div>
 
