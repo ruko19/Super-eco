@@ -25,7 +25,7 @@ const analytics = getAnalytics(app);
 
 // export const database = getFirestore(app);
 
-const db = getFirestore(app);
+export const db = getFirestore(app);
 
 
 export const getData = async () => {
@@ -40,6 +40,7 @@ export const getData = async () => {
   return data
 
 }
+
 
 // export const fetchEventos = () => async (dispatch) => {
 //   const snapshot = await getDocs(collection(db, "eventos"));
