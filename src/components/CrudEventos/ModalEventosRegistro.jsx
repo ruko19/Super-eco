@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { addEventos } from "../../features/eventos/eventosSlice";
+
 
 const ModalEventosRegistro = ({ handleBorrarModal }) => {
 

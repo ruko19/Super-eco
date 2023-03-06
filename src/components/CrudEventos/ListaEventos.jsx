@@ -1,23 +1,23 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchEventos } from "../../api/firebaseConfig"
+
 
 
 
 const ListaEventos = () => {
 
-    const { eventosList: eventos } = useSelector(state => state.eventos)
+    // const { eventosList: eventos } = useSelector(state => state.eventos)
 
-    const distpatch = useDispatch();
+    // const distpatch = useDispatch();
 
-    useEffect(() => {
-        distpatch(fetchEventos())
+    // useEffect(() => {
+    //     distpatch(fetchEventos())
 
-    }, [distpatch])
+    // }, [distpatch])
 
-    const eventosI = [...eventos].reverse()
+    // const eventosI = [...eventos].reverse()
 
-    eventosI
+    // eventosI
 
 
 

@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { FaRecycle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchEventos } from "../api/firebaseConfig";
+import { fetchEventos } from "../features/eventos/eventosSlice";
+
+
 
 
 const Eventos = () => {
@@ -14,6 +16,7 @@ const Eventos = () => {
     distpatch(fetchEventos())
 
   }, [distpatch])
+
 
 
   return (
