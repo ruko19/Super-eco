@@ -16,7 +16,7 @@ const ListaEventos = () => {
     }, [distpatch])
 
 
-    const eventosI = [...eventos].reverse()
+    eventosI
 
 
 
