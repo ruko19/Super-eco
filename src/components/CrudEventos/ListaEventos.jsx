@@ -10,6 +10,11 @@ const ListaEventos = () => {
     const { eventos } = useEventos()
 
     const eventosReverse = [...eventos].reverse()
+    useEffect(() => {
+        eventos
+
+    }, [eventos])
+
 
     return (
 

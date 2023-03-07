@@ -1,10 +1,17 @@
+
+import { async } from "@firebase/util";
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
-import { useDispatch } from "react-redux";
+
+import useEventos from "../../hooks/useEventos";
 
 const ModalEventosRegistro = ({ handleBorrarModal }) => {
 
+    const { createEvento } = useEventos()
+    const [message, setMessage] = useState({ error: false, msg: "" });
+
     // const dispatch = useDispatch()
+
 
 
     const [id, setId] = useState("")
@@ -14,17 +21,36 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
     const [titulo, setTitulo] = useState("")
     const [lugar, setLugar] = useState("")
 
-    console.log(id);
-    console.log(organizador);
-    console.log(dia);
-    console.log(mes);
-    console.log(titulo);
-    console.log(lugar);
 
 
-    const onSubmit = () => {
+
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        dispatch(addEventos({ id }))
+        setMessage("");
+        if (id === "" || organizador === "" || dia === "" || mes === "" || titulo === "" || lugar === "") {
+            setMessage({ error: true, msg: "por favor llenar todos los campos" });
+            return;
+        }
+        const newEvento = {
+            id,
+            organizador,
+            dia,
+            mes,
+            titulo,
+            lugar,
+        };
+        console.log(newEvento);
+        try {
+            await createEvento(id, newEvento)
+
+            setMessage({ error: false, msg: "nuevo evento agregado" })
+            console.log(message);
+        } catch (error) {
+            setMessage({ error: true, msg: error.message })
+
+        }
+
     }
 
 
@@ -37,7 +63,7 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
             />
             <div className="w-1/2 mx-auto">
                 <h3 className=" text-center mb-12 uppercase text-4xl font-bold text-white">Registrar evento</h3>
-                <form className='flex flex-col'>
+                <form onSubmit={handleSubmit} className='flex flex-col'>
 
                     <input onChange={(e) => setId(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Id' />
 

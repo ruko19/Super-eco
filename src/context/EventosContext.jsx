@@ -1,5 +1,7 @@
 
 import { createContext, useState, useEffect } from "react";
+import { addDoc, collection, doc, setDoc } from "firebase/firestore";
+import { db } from "../api/firebaseConfig";
 
 import { getData } from "../api/firebaseConfig";
 
@@ -21,15 +23,22 @@ export const EventosProvider = ({ children }) => {
         }
         console.log(eventos);
     }
-
     useEffect(() => {
 
         getEventos()
 
     }, [])
 
+
+
+    const createEvento = async (idEvento, newEvento) => {
+        await setDoc(doc(db, "eventos", `${idEvento}`), newEvento);
+
+    }
+
+
     return (
-        <EventosContext.Provider value={{ eventos }}>
+        <EventosContext.Provider value={{ eventos, createEvento }}>
             {children}
         </EventosContext.Provider>
     )
