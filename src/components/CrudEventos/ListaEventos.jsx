@@ -1,19 +1,29 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import useEventos from "../../hooks/useEventos"
-
-
-
-
 
 const ListaEventos = () => {
 
-    const { eventos } = useEventos()
+    const { eventos, eliminarEvento, getEventos, setId, setOrganizador, setDia, setMes, setTitulo, setLugar } = useEventos()
 
     const eventosReverse = [...eventos].reverse()
     useEffect(() => {
         eventos
 
     }, [eventos])
+
+    const handleEliminar = (id) => {
+        eliminarEvento(id)
+        getEventos()
+    }
+
+    const handleEditar = (e) => {
+        setId(e.id)
+        setOrganizador(e.organizador)
+        setDia(e.dia)
+        setMes(e.mes)
+        setTitulo(e.titulo)
+        setLugar(e.lugar)
+    }
 
 
     return (
@@ -32,8 +42,8 @@ const ListaEventos = () => {
                         <p className='font-light'>Dia: <span className='font-medium uppercase'>{e.dia}</span></p>
                         <p className='font-light'>Mes: <span className='font-medium uppercase'>{e.mes}</span></p>
                         <div className='mt-5'>
-                            <button className="bg-blue-500 p-3 rounded-lg text-white">Editar</button>{"  "}
-                            <button className="bg-red-500 p-3 rounded-lg text-white">Elimar</button>
+                            <button className="bg-blue-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
+                            <button className="bg-red-500 p-3 rounded-lg text-white" onClick={() => { handleEliminar(e.id) }}>Elimar</button>
                         </div>
                     </div>
 
