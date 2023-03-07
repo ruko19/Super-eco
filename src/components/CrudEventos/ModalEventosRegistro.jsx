@@ -2,6 +2,7 @@
 import { async } from "@firebase/util";
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
+import Swal from 'sweetalert2'
 
 import useEventos from "../../hooks/useEventos";
 
@@ -29,7 +30,14 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
         e.preventDefault();
         setMessage("");
         if (id === "" || organizador === "" || dia === "" || mes === "" || titulo === "" || lugar === "") {
-            setMessage({ error: true, msg: "por favor llenar todos los campos" });
+            setMessage({
+                error: true, msg: Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Llena todos los campos por favor',
+
+                })
+            });
             return;
         }
         const newEvento = {
@@ -44,7 +52,14 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
         try {
             await createEvento(id, newEvento)
 
-            setMessage({ error: false, msg: "nuevo evento agregado" })
+            setMessage({
+                error: false, msg: Swal.fire({
+                    icon: 'success',
+                    title: 'Wow',
+                    text: 'Nuevo evento agregrado',
+
+                })
+            })
             console.log(message);
         } catch (error) {
             setMessage({ error: true, msg: error.message })
