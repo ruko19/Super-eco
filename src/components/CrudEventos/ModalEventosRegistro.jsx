@@ -8,23 +8,19 @@ import useEventos from "../../hooks/useEventos";
 
 const ModalEventosRegistro = ({ handleBorrarModal }) => {
 
-    const { createEvento } = useEventos()
+    const { createEvento, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, id, setId } = useEventos()
     const [message, setMessage] = useState({ error: false, msg: "" });
 
     // const dispatch = useDispatch()
 
-
-
-    const [id, setId] = useState("")
-    const [organizador, setOrganizador] = useState("")
-    const [dia, setDia] = useState("")
-    const [mes, setMes] = useState("")
-    const [titulo, setTitulo] = useState("")
-    const [lugar, setLugar] = useState("")
-
-
-
-
+    const newEvento = {
+        id,
+        organizador,
+        dia,
+        mes,
+        titulo,
+        lugar,
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -40,14 +36,6 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
             });
             return;
         }
-        const newEvento = {
-            id,
-            organizador,
-            dia,
-            mes,
-            titulo,
-            lugar,
-        };
         console.log(newEvento);
         try {
             await createEvento(id, newEvento)
