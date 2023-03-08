@@ -12,8 +12,8 @@ const ListaEventos = () => {
     }, [eventos])
 
     const handleEliminar = (id) => {
-        eliminarEvento(id)
         getEventos()
+        eliminarEvento(id)
     }
 
     const handleEditar = (e) => {

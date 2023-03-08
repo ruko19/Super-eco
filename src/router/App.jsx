@@ -8,6 +8,7 @@ import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
 import Administracion from "../pages/Administracion"
 import { EventosProvider } from "../context/EventosContext"
+import EventoUnico from "../pages/EventoUnico"
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routes>
+            <Route path="/evento/:id" element={<EventoUnico />} />
             <Route path="/" element={<Home />} />
             <Route path="/quienes-somos" element={<QuienesSomos />} />
             <Route path="/eventos" element={<Eventos />} />
