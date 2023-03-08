@@ -17,7 +17,7 @@ export const EventosProvider = ({ children }) => {
         try {
             const res = await getData();
             setEventos(res)
-            getEventos();
+
         } catch (error) {
 
         }
