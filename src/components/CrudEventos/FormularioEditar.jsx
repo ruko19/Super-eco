@@ -1,9 +1,19 @@
 import useEventos from "../../hooks/useEventos"
 import Swal from 'sweetalert2'
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from "../../api/firebaseConfig";
 
 const FormularioEditar = () => {
+    const { organizador, id, dia, mes, titulo, lugar, editarEvento } = useEventos();
 
-    const { organizador, id, dia, mes, titulo, lugar } = useEventos();
+    const newEvento = {
+        id,
+        organizador,
+        dia,
+        mes,
+        titulo,
+        lugar,
+    };
 
     const handleEditarEvento = async (e) => {
         e.preventDefault();
@@ -11,7 +21,7 @@ const FormularioEditar = () => {
             Swal.fire("no hay datos")
         }
         try {
-
+            console.log(await editarEvento(id, newEvento))
         } catch (error) {
             console.log(error)
         }

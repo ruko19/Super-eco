@@ -45,7 +45,6 @@ export const getData = async () => {
   return data;
 };
 
-
 // export const fetchEventos = () => async (dispatch) => {
 //   const snapshot = await getDocs(collection(db, "eventos"));
 //   const data = [];
