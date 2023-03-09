@@ -15,11 +15,11 @@ const QuienesSomos = () => {
             </div>
 
             <div className="mt-24 md:w-1/2 font-light">
-                <p className="mb-16"><span className="text-lime-500 font-bold">RROP</span> es una organizacion sin animo de lucro que se encarga de promover y de gestionar un mejor manejo de los residuos reciclables atravez de la educacion,
+                <p className="mb-16"><span className="text-green-600 font-bold">RROP</span> es una organizacion sin animo de lucro que se encarga de promover y de gestionar un mejor manejo de los residuos reciclables atravez de la educacion,
                     la cultura y el arte , para ello trabajamos con los ciudadanos, administracion publicas y empresas sobre la importancia del reciclaje en nuestra sociedad
                     para tener un <strong>mejor planeta</strong>.
                 </p>
-                <p className="mb-4 text-left text-4xl"><strong>Misión</strong></p>
+                <p className="mb-4 text-left text-4xl"><strong setImage>Misión</strong></p>
                 <p>Nuestra vision es promover actividaes que minimicen la cantidad de residuos plasticos destinados a disposicion final y que afecten el medio ambiente,
                     nuestra intencion es aportar nuestro grano de arena para el salvar al planeta del cambio climatico producto de los efectos del calentamiento global,
                     contribuyendo con la cadena de actores vinculados al retiro, traslado, recuperacion y reciclaje de desechos

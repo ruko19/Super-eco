@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 const FormularioEditar = () => {
-    const { organizador, id, dia, mes, titulo, lugar, editarEvento, setOrganizador, setDia, setMes, setTitulo, setLugar } = useEventos();
+    const { organizador, id, dia, getEventos, mes, titulo, lugar, editarEvento, setOrganizador, setDia, setMes, setTitulo, setLugar, image, setImage } = useEventos();
     const [success, setSuccess] = useState(null)
     const newFields = {
         id,
@@ -16,6 +16,7 @@ const FormularioEditar = () => {
         mes,
         titulo,
         lugar,
+        image
     };
 
     const handleEditarEvento = async (e) => {
@@ -28,6 +29,7 @@ const FormularioEditar = () => {
             await editarEvento(id, newFields)
             console.log(typeof id, newFields);
             setSuccess(true)
+            getEventos();
 
 
         } catch (error) {
@@ -50,7 +52,7 @@ const FormularioEditar = () => {
 
                 <input onChange={(e) => setLugar(e.target.value)} defaultValue={lugar} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Lugar' />
 
-                <input defaultValue={image} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
+                <input onChange={(e) => setImage(e.target.value)} defaultValue={image} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
 
 
                 <input className='mb-8 p-6 bg-blue-500 cursor-pointer outline-none text-white rounded-lg hover:bg-transparent hover:border transition-all hover:border-blue-500 hover:text-blue-500' type="submit" value="Editar evento" />

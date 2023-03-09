@@ -3,7 +3,7 @@ import useEventos from "../../hooks/useEventos"
 
 const ListaEventos = () => {
 
-    const { eventos, eliminarEvento, getEventos, setId, setOrganizador, setDia, setMes, setTitulo, setLugar } = useEventos()
+    const { eventos, eliminarEvento, getEventos, setId, setOrganizador, setDia, setMes, setTitulo, setLugar, image, setImage } = useEventos()
 
     const eventosReverse = [...eventos].reverse()
     useEffect(() => {
@@ -23,6 +23,7 @@ const ListaEventos = () => {
         setMes(e.mes)
         setTitulo(e.titulo)
         setLugar(e.lugar)
+        setImage(e.image)
     }
 
 
@@ -41,6 +42,7 @@ const ListaEventos = () => {
                         <p className='font-light'>Lugar: <span className='font-medium uppercase'>{e.lugar}</span></p>
                         <p className='font-light'>Dia: <span className='font-medium uppercase'>{e.dia}</span></p>
                         <p className='font-light'>Mes: <span className='font-medium uppercase'>{e.mes}</span></p>
+                        <img src={e.image} alt="imagen evento" width="150" />
                         <div className='mt-5'>
                             <button className="bg-blue-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
                             <button className="bg-red-500 p-3 rounded-lg text-white" onClick={() => { handleEliminar(e.id) }}>Elimar</button>

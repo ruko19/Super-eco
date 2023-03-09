@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <div className="w-full text-center">
                 <div className="max-w-screen-lg m-auto">
-                    <h2 className="text-7xl font-bold mb-11">¿QUE HACEMOS <br />Y COMO LO <span className="text-green-600">HACEMOS ?</span></h2>
+                    <h2 className="text-7xl font-bold mb-11">¿Qué hacemos <br />y cómo lo <span className="text-green-600">hacemos ?</span></h2>
                     <p className="leading-10 px-10 md:px-0"> <span className="text-green-600 font-bold">RROP</span>  es una organizacion sin animo de lucro que busca generar un cambio en las personas e influir en la sociedad,
                         su comportamiento y en su estilo de vida, a travez de la educacion, el arte y la cultura sobre la importancia del reciclaje
                         y el cuidado del medio ambiente para poder lograr un futuro sostenible.
@@ -28,7 +28,7 @@ const Home = () => {
 
 
                 <section className="relative" >
-                    <h2 className=" mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">EL RECICLAJE </span>TODO <br /> LO QUE DEBES SABER</h2>
+                    <h2 className=" mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">El reciclaje </span>todo <br /> lo que debes saber</h2>
 
                     <div className="container">
                         <TipsTargetList />
@@ -39,7 +39,7 @@ const Home = () => {
 
 
                 <section className="mb-40 ">
-                    <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">EVENTOS</span> <br /> MÁS CERCANOS</h2>
+                    <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">Eventos</span> <br /> más cercanos</h2>
                     <div className="  container relative">
                         <EventsComponents />
                     </div>
@@ -47,7 +47,7 @@ const Home = () => {
 
 
                 <section>
-                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >BLOG</span> <br />ÚLTIMAS ENTRADA</h2>
+                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Blog</span> <br />últimas entradas</h2>
                     <div className="container">
                         <TipDayList />
                     </div>
@@ -59,10 +59,9 @@ const Home = () => {
 
                 <section className="container grid grid-cols-1 md:grid-cols-2 gap-28 p-20">
                     <div>
-                        <h2 className="text-6xl text-left font-bold"> <span className="text-green-600">INICIATIVAS</span>  AMBIENTALES</h2>
-                        <p className="text-left">Inscribete a nuestras iniciativas y recibe en tu correo electronico nuestros proximos eventos y contenido exclusivo sobre el reciclaje y el medio
-                            ambiente.
-                            JUNTOS LO PODEMOS LOGRAR </p>
+                        <h2 className="text-6xl text-left font-bold"> <span className="text-green-600">Iniciativas</span>  ambientales</h2>
+                        <p className="text-left">Inscríbete a nuestras iniciativas y recibe en tu correo electrónico nuestros próximos eventos y contenido exclusivo sobre el reciclaje y el medio
+                            ambiente.</p>
                         <FormInit />
                     </div>
                     <div className="w-full grid place-items-center">

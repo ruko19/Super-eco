@@ -1,8 +1,8 @@
 
 const Blog = () => {
-    return (
-      <div className="container">
-        <div>
+  return (
+    <div className="container md:grid grid-cols-3 gap-8 ">
+      {/*
           <form className="justify-center flex   ">
             <select className="bg-lime-500 rounded-xl p-8 text-white w-2/5 text-3xl">
               <option selected>Selecciona una categoria</option>
@@ -10,186 +10,83 @@ const Blog = () => {
               <option value=""></option>
             </select>
           </form>
-          <div className="grid grid-cols-2 mx-auto">
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
-
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1 ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
+    */}
+      <div className="col-span-2 ">
+        <div className="md:flex items-center gap-8 mb-6">
+          <div>
+            <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" />
+          </div>
+          <div>
+            <div className="md:flex items-center gap-6">
+              <p className="text-green-600 text-4xl text-center">
+                <span className="font-bold text-5xl">
+                  5 <br />
+                </span>
+                Jul
+              </p>
+              <p className="font-medium text-4xl">¿Que es la economia circular?</p>
             </div>
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
+            <p className="font-light mb-6">es sistema economico y social que tiene como objetivo la produccion de bienes y servicios al tiempo...</p>
+            <a className="bg-green-600 text-white py-4 px-7 rounded-full" href="#">Detalle de este blog</a>
+          </div>
+        </div>
 
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1 ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
+
+        <div className="md:flex items-center gap-8">
+          <div>
+            <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" />
+          </div>
+          <div>
+            <div className="md:flex items-center gap-6">
+              <p className="text-green-600 text-4xl text-center">
+                <span className="font-bold text-5xl">
+                  5 <br />
+                </span>
+                Jul
+              </p>
+              <p className="font-medium text-4xl">¿Que es la economia circular?</p>
             </div>
-
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
-
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1 ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
-            </div>
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
-
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1 ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
-            </div>
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
-
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1 ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
-            </div>
-            <div className="mt-20">
-              <a href="#">
-                <li className="mb-20 flex ">
-                  <img
-                    className=" "
-                    src={
-                      "https://res.cloudinary.com/dvugueqo4/image/upload/v1677635232/cans-gabc40fe7c_1280_vvvbzx.jpg"
-                    }
-                    alt="imagen"
-                    width="300"
-                  />
-
-                  <div className=" ml-10 mt-16">
-                    <h6 className="ml-10 text-3xl text-gray-400">
-                      Organizador <span className="text-lime-500">RROP</span>
-                    </h6>
-                    <p className="text-4xl ml-10 font-bold text-black mt-1  ">
-                      TIP DEL DIA
-                    </p>
-                    <p className=" ml-10 text-2xl text-gray-800 ">
-                      Teatro medellin
-                    </p>
-                    <button className="bg-lime-500 rounded-xl w-64 text-xl mt-5 ml-10 text-white ">
-                      Mas detalles
-                    </button>
-                  </div>
-                </li>
-              </a>
-            </div>
+            <p className="font-light mb-6">es sistema economico y social que tiene como objetivo la produccion de bienes y servicios al tiempo...</p>
+            <a className="bg-green-600 text-white py-4 px-7 rounded-full" href="#">Detalle de este blog</a>
           </div>
         </div>
       </div>
-    );
+
+      {/*columna 2*/}
+      <div className="mx-auto">
+        <p className="font-medium text-4xl mb-5">Blogs Recientes</p>
+        <div className="flex gap-4">
+          <div>
+            <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" width="100" />
+          </div>
+          <div className="w-1/2">
+            <p className="font-medium">¿Que es la economia circular?</p>
+            <p className="text-gray-400">Fecha: 5 Jul</p>
+          </div>
+        </div>
+
+        <div className="flex gap-4">
+          <div>
+            <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" width="100" />
+          </div>
+          <div className="w-1/2">
+            <p className="font-medium">¿Que es la economia circular?</p>
+            <p className="text-gray-400">Fecha: 5 Jul</p>
+          </div>
+        </div>
+
+        <div className="flex gap-4">
+          <div>
+            <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" width="100" />
+          </div>
+          <div className="w-1/2">
+            <p className="font-medium">¿Que es la economia circular?</p>
+            <p className="text-gray-400">Fecha: 5 Jul</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Blog
