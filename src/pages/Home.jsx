@@ -6,7 +6,7 @@ import TipsTargetList from "../components/TipsTargetLis/TipsTargetList";
 import { TbClick } from "react-icons/tb";
 import FormInit from "../components/FormInit/FormInit";
 
-import imgheroe from "../../public/mascota.png"
+import imgheroe from "../../public/mascota_corregido.png"
 
 
 const Home = () => {
