@@ -1,5 +1,5 @@
 
-import { async } from "@firebase/util";
+
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import Swal from 'sweetalert2'
@@ -37,7 +37,7 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
             });
             return;
         }
-        console.log(newEvento);
+
         try {
             await createEvento(id, newEvento)
 

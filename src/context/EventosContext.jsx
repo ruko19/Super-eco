@@ -28,6 +28,7 @@ export const EventosProvider = ({ children }) => {
         try {
             const res = await getData();
             setEventos(res)
+
         } catch (error) {
 
         }
@@ -50,8 +51,8 @@ export const EventosProvider = ({ children }) => {
     }
 
     //editar evento
-    const editarEvento = async (idEvento) => {
-        await updateDoc(doc(db, "eventos", idEvento))
+    const editarEvento = async (idEvento, newFields) => {
+        await updateDoc(doc(db, "eventos", idEvento), newFields)
     }
 
 
