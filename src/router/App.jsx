@@ -9,6 +9,7 @@ import LoginAdmin from "../pages/LoginAdmin"
 import Administracion from "../pages/Administracion"
 import { EventosProvider } from "../context/EventosContext"
 import EventoUnico from "../pages/EventoUnico"
+import Ubicaciones from "../pages/Ubicaciones"
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
+            <Route path="/ubicaciones" element={<Ubicaciones />} />
           </Routes>
         </Layout>
       </BrowserRouter>
