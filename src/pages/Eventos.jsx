@@ -11,9 +11,47 @@ const Eventos = () => {
 
 
   return (
-    <div className="container ">
+    <div className="container md:grid grid-cols-3 gap-12 items-center">
 
       {eventos.map((e) => (
+        <div className="" key={e.id}>
+          <figure>
+            <img src={e.image} alt="imagen evento" className="w-full h-96 object-cover" />
+          </figure>
+
+          <figure className=" p-5 relative">
+            <FaRecycle className='text-8xl absolute left-0 bottom-0 bg-green-600 rounded-full text-white border-4 border-white p-3' />
+          </figure>
+
+          <div className="mt-6">
+            <h6 className="text-1xl text-gray-400 group-hover:text-white">
+              Organizador <span className="text-green-600 group-hover:text-white">{e.organizador}</span>
+            </h6>
+            <div className="md:flex items-center mt-5">
+              <div>
+                <p className="text-green-600 text-4xl  ">
+                  <span className="font-bold text-5xl">
+                    {e.dia} <br />
+                  </span>
+                  {e.mes}
+                </p>
+              </div>
+              <div>
+                <p className="text-2xl ml-10 font-medium text-black mt-1 uppercase group-hover:text-white">
+                  {e.titulo}
+                </p>
+                <p className=" ml-10 text-md  text-gray-400 group-hover:text-white">{e.lugar}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Eventos;
+{/*
         <div key={e.id} className="mb-20 flex ">
           <figure className='inline-block bg-lime-500 p-5 rounded-full text-white border-8 border-white'>
             <FaRecycle className='text-7xl' />
@@ -37,35 +75,4 @@ const Eventos = () => {
             <p className=" ml-10 text-2xl text-gray-800 group-hover:text-white">{e.lugar}</p>
           </div>
         </div>
-
-      ))}
-
-
-
-
-
-
-
-
-
-
-      {/* <div className="justify-center flex ">
-          <button className="rounded-full border w-24 h-24 mr-8 border-gray-400 text-gray-400 hover:bg-gray-400">
-            1
-          </button>
-          <button className="rounded-full border w-24 h-24 mr-8 border-gray-400 text-gray-400 hover:bg-gray-400 ">
-            2
-          </button>
-          <button className="rounded-full border w-24 h-24 mr-8 border-gray-400 text-gray-400 hover:bg-gray-400">
-            3
-          </button>
-          <button className="rounded-full border w-24 h-24 mr-8 border-gray-400 text-gray-400 hover:bg-gray-400">
-            4
-          </button>
-        </div> */}
-
-    </div>
-  );
-};
-
-export default Eventos;
+      */}

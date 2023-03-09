@@ -8,7 +8,7 @@ import useEventos from "../../hooks/useEventos";
 
 const ModalEventosRegistro = ({ handleBorrarModal }) => {
 
-    const { createEvento, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, id, setId } = useEventos()
+    const { createEvento, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, id, setId, image, setImage } = useEventos()
     const [message, setMessage] = useState({ error: false, msg: "" });
 
     // const dispatch = useDispatch()
@@ -20,12 +20,13 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
         mes,
         titulo,
         lugar,
+        image
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage("");
-        if (id === "" || organizador === "" || dia === "" || mes === "" || titulo === "" || lugar === "") {
+        if (id === "" || organizador === "" || dia === "" || mes === "" || titulo === "" || lugar === "" || image === "") {
             setMessage({
                 error: true, msg: Swal.fire({
                     icon: 'error',
@@ -68,17 +69,19 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
                 <h3 className=" text-center mb-12 uppercase text-4xl font-bold text-white">Registrar evento</h3>
                 <form onSubmit={handleSubmit} className='flex flex-col'>
 
-                    <input onChange={(e) => setId(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Id' />
+                    <input onChange={(e) => setId(e.target.value)} value={id} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Id' />
 
-                    <input onChange={(e) => setOrganizador(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Organizador' />
+                    <input onChange={(e) => setOrganizador(e.target.value)} value={organizador} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Organizador' />
 
-                    <input onChange={(e) => setDia(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Día' />
+                    <input onChange={(e) => setDia(e.target.value)} value={dia} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Día' />
 
-                    <input onChange={(e) => setMes(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Mes' />
+                    <input onChange={(e) => setMes(e.target.value)} value={mes} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Mes' />
 
-                    <input onChange={(e) => setTitulo(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Nombre evento' />
+                    <input onChange={(e) => setTitulo(e.target.value)} value={titulo} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Nombre evento' />
 
-                    <input onChange={(e) => setLugar(e.target.value)} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Lugar' />
+                    <input onChange={(e) => setLugar(e.target.value)} value={lugar} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Lugar' />
+
+                    <input onChange={(e) => setImage(e.target.value)} value={image} className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
 
 
 

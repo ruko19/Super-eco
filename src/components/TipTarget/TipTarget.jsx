@@ -8,7 +8,7 @@ const TipTarget = ({ data }) => {
                 <img className='w-full h-80' src={data.img} alt="" />
             </figure>
             <div className=" flex items-center p-24 bg-white">
-                <p className=" w-full h-24 text-lime-500 text-4xl">{data.title}</p>
+                <p className=" w-full h-24 text-green-600 text-4xl">{data.title}</p>
             </div>
         </div>
     )

@@ -11,12 +11,12 @@ const ListaEventos = () => {
 
     }, [eventos])
 
-    const handleEliminar = (id) => {
+    const handleEliminar = async (id) => {
+        await eliminarEvento(id)
         getEventos()
-        eliminarEvento(id)
     }
 
-    const handleEditar = (e) => {
+    const handleEditar = async (e) => {
         setId(e.id)
         setOrganizador(e.organizador)
         setDia(e.dia)

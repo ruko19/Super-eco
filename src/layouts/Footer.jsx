@@ -6,9 +6,9 @@ const Footer = () => {
             <div className="sm:flex sm:items-center sm:justify-between container">
                 <Link to="/" className="flex items-center mb-4 sm:mb-0">
                     <img
-                        src="https://res.cloudinary.com/dwvchf8al/image/upload/v1677613830/Demo_day_RROP/logo-RROP_xzyjzn.png"
+                        src="https://res.cloudinary.com/dwvchf8al/image/upload/v1678309687/Demo_day_RROP/logo-demoday_abjbte.png"
                         alt="RROP Logo"
-                        width="200"
+                        width="250"
                         className="mx-auto"
                     />
                 </Link>

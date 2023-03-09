@@ -19,6 +19,9 @@ export const EventosProvider = ({ children }) => {
     const [mes, setMes] = useState("")
     const [titulo, setTitulo] = useState("")
     const [lugar, setLugar] = useState("")
+    const [image, setImage] = useState("")
+
+    const [eventoId, setEventoId] = useState("")
 
     //obtener evento
     const getEventos = async () => {
@@ -28,7 +31,6 @@ export const EventosProvider = ({ children }) => {
         } catch (error) {
 
         }
-        console.log(eventos);
     }
     useEffect(() => {
 
@@ -48,13 +50,14 @@ export const EventosProvider = ({ children }) => {
     }
 
     //editar evento
-    const editarEvento = async (idEvento, evento) => {
-        await updateDoc((db, "eventos", idEvento), { evento })
+    const editarEvento = async (idEvento) => {
+        await updateDoc(doc(db, "eventos", idEvento))
     }
 
 
+
     return (
-        <EventosContext.Provider value={{ eventos, createEvento, eliminarEvento, getEventos, id, setId, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, editarEvento }}>
+        <EventosContext.Provider value={{ eventos, createEvento, eliminarEvento, getEventos, id, setId, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, eventoId, setEventoId, editarEvento, image, setImage }}>
             {children}
         </EventosContext.Provider>
     )

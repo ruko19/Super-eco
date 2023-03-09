@@ -7,7 +7,7 @@ const TipDay = () => {
             <figure>
                 <img src={img2} alt="" />
             </figure>
-            <div className='bg-lime-500 p-5'>
+            <div className='bg-green-600 p-5'>
                 <h3 className='text-white text-4xl'>Tip del Dia</h3>
             </div>
         </div>

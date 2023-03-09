@@ -30,7 +30,7 @@ const EventsComponents = () => {
                         ))
                     }
 
-                    <Link className='bg-lime-500 w-96 p-3 rounded-lg text-white mx-auto' to={"/eventos"}>Ver más eventos quí</Link>
+                    <Link className='bg-green-600 w-96 p-3 rounded-lg text-white mx-auto' to={"/eventos"}>Ver más eventos quí</Link>
                 </div>
 
             </div>
