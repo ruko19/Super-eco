@@ -59,7 +59,7 @@ const FormularioEditar = () => {
                 <input onChange={(e) => setImage(e.target.value)} defaultValue={image} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
 
 
-                <input className='mb-8 p-3 bg-blue-500 cursor-pointer outline-none text-white rounded-lg hover:bg-transparent hover:border transition-all hover:border-blue-500 hover:text-blue-500' type="submit" value="Editar evento" />
+                <input className='mb-8 p-3 bg-gray-500 cursor-pointer outline-none text-white rounded-lg hover:bg-transparent hover:border transition-all hover:border-gray-500 hover:text-gray-500' type="submit" value="Editar evento" />
             </form>
         </div>
     )

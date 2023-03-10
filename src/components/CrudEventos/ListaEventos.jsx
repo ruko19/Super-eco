@@ -33,7 +33,7 @@ const ListaEventos = () => {
 
 
 
-        <div className='md:w-1/2 text-center md:h-96 overflow-y-scroll' >
+        <div className='md:w-1/2 text-center md:h-[400px] overflow-y-scroll' >
 
             {
                 eventosReverse.map((e) => (
@@ -47,7 +47,7 @@ const ListaEventos = () => {
                         <p className='font-light'>Descripcion: <span className='font-medium uppercase'>{e.descripcion}</span></p>
                         <img src={e.image} alt="imagen evento" width="150" />
                         <div className='mt-5'>
-                            <button className="bg-blue-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
+                            <button className="bg-gray-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
                             <button className="bg-red-500 p-3 rounded-lg text-white" onClick={() => { handleEliminar(e.id) }}>Elimar</button>
                         </div>
                     </div>
