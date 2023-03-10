@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
+import useEventos from '../../hooks/useEventos';
 
 const LoginAdminComponent = () => {
 
-    const [userAdmin, setUserAdmin] = useState({})
+    const { userAdmin, setUserAdmin } = useEventos();
+
     const navigate = useNavigate();
 
     const { register, handleSubmit, formState: { errors } } = useForm();
