@@ -20,6 +20,7 @@ export const EventosProvider = ({ children }) => {
     const [titulo, setTitulo] = useState("")
     const [lugar, setLugar] = useState("")
     const [image, setImage] = useState("")
+    const [descripcion, setDescripcion] = useState("")
 
     const [eventoId, setEventoId] = useState("")
 
@@ -58,7 +59,32 @@ export const EventosProvider = ({ children }) => {
 
 
     return (
-        <EventosContext.Provider value={{ eventos, createEvento, eliminarEvento, getEventos, id, setId, organizador, setOrganizador, dia, setDia, mes, setMes, titulo, setTitulo, lugar, setLugar, eventoId, setEventoId, editarEvento, image, setImage }}>
+        <EventosContext.Provider
+            value={{
+                eventos,
+                createEvento,
+                eliminarEvento,
+                getEventos,
+                id,
+                setId,
+                organizador,
+                setOrganizador,
+                dia,
+                setDia,
+                mes,
+                setMes,
+                titulo,
+                setTitulo,
+                lugar,
+                setLugar,
+                eventoId,
+                setEventoId,
+                editarEvento,
+                image,
+                setImage,
+                descripcion,
+                setDescripcion
+            }}>
             {children}
         </EventosContext.Provider>
     )

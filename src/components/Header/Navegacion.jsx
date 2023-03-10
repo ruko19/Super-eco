@@ -12,7 +12,7 @@ const Navegacion = () => {
                 <ul className="grid md:grid-cols-6 text-2xl">
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/"}>Inicio</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/quienes-somos"}>Nosotros</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/ubicaciones"}>Ubicaciones</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/ubicaciones"}>¿Dónde está Súper Eco?</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/eventos"}>Eventos</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/Blog"}>Blog</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/Contacto"}>Contacto</NavLink>
