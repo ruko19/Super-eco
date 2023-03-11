@@ -21,7 +21,7 @@ const EventosComponente = () => {
             <div>
                 <button
                     onClick={() => mostrarModal()}
-                    className="mb-12 uppercase bg-blue-500 p-3 rounded-lg text-white">Insertar nuevo evento</button>
+                    className="mb-12 uppercase bg-gray-500 p-3 rounded-lg text-white">Insertar nuevo evento</button>
                 <div className="md:flex justify-between">
                     <FormularioEditar />
                     <ListaEventos />

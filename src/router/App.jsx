@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path="/evento/:id" element={<EventoUnico />} />
+            <Route path="/evento/:id/:nombre" element={<EventoUnico />} />
             <Route path="/" element={<Home />} />
             <Route path="/quienes-somos" element={<QuienesSomos />} />
             <Route path="/eventos" element={<Eventos />} />
