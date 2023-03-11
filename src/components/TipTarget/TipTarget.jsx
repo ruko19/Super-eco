@@ -19,11 +19,11 @@ import img1 from "../../../public/img 1.jpg"
 
 const TipTarget = ({ data }) => {
     return (
-        <div className="flex z-10 items-center justify-center mb-32">
-            <div className="group h-[400px] w-full [perspective:1000px]">
-                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div className="absolute inset-0">
-                        <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src={data.img} alt="" />
+        <div classNameName="flex z-10 items-center justify-center mb-32">
+            <div classNameName="group h-[400px] w-full [perspective:1000px]">
+                <div classNameName="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div classNameName="absolute inset-0">
+                        <img classNameName="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src={data.img} alt="" />
                     </div>
 
                     <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12  text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden] text-left">

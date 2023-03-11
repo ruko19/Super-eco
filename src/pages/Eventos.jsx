@@ -15,7 +15,7 @@ const Eventos = () => {
       {eventos.map(({ dia, mes, titulo, id, descripcion, organizador, lugar, image }) => (
         <Link to={`/evento/${id}/${titulo}`} key={id} state={{ dia, mes, titulo, descripcion, organizador, lugar, image }}>
           <div className="" >
-            <figure>
+            <figure className="">
               <img src={image} alt="imagen evento" className="w-full h-96 object-cover" />
             </figure>
 

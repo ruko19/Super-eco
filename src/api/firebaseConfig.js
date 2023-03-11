@@ -45,6 +45,19 @@ export const getData = async () => {
   return data;
 };
 
+
+export const getDataBlogs = async () => {
+  const snapshot = await getDocs(collection(db, "blogs"));
+  const data = [];
+
+  snapshot.forEach((doc) => {
+    const blog = doc.data();
+    data.push({ ...blog });
+  });
+
+  return data;
+};
+
 // export const fetchEventos = () => async (dispatch) => {
 //   const snapshot = await getDocs(collection(db, "eventos"));
 //   const data = [];
