@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-size: 1.6rem;
   margin: 0;
@@ -19,9 +20,11 @@ body {
   max-width: 135rem;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
@@ -30,12 +33,19 @@ li {
 .bg-primary {
   background: #91b739;
 }
+
 .txt-primary {
   color: #91b739;
 }
+
 /*hero*/
 .hero {
   background-image: url(https://res.cloudinary.com/dwvchf8al/image/upload/v1677614722/Demo_day_RROP/banner_gtahgz.png);
   width: 100%;
   height: 80vh;
+}
+
+.leaflet-container {
+  width: 90vw;
+  height: 90vh;
 }

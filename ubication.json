@@ -1,0 +1,130 @@
+{
+    "ubications": [
+        {
+            "name": "Centro Comercial los Molinos",
+            "ubication": [
+                6.2325303,
+                -75.6038790868728
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/v1678376506/IMG_0315-1024x640_g6qroz.jpg",
+            "direccion": "Cl. 30A #82A-26, Medellín, Belén, Medellín, Antioquia"
+        },
+        {
+            "name": "Centro comercial Arkadia",
+            "ubication": [
+                6.21264705,
+                -75.5946511285194
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378448/arkadia-from-the-outside_w5yuxu.jpg",
+            "direccion": "Cra. 70 #1-141,Belén, Medellín, Antioquia"
+        },
+        {
+            "name": "Centro comercial Unicentro",
+            "ubication": [
+                6.2410415,
+                -75.5857707
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378566/unicentro-medellin-el_ipxoru.jpg",
+            "direccion": "Cra. 66B #34A-76, Laureles - Estadio"
+        },
+        {
+            "name": "Centro comercial Oviedo",
+            "ubication": [
+                6.19824095,
+                -75.5751482373786
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378769/5eS6QmHq5RlXlqMO0llM90gAnHPHQGpXF2Eqk4WMBTg_gkqzhj.jpg",
+            "direccion": "Calle 30, Cra. 43A, Medellín, Antioquia"
+        },
+        {
+            "name": "Centro comercial Fabricato",
+            "ubication": [
+                6.32615265,
+                -75.5585864595439
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_200,w_320/v1678389344/parque_fabricato_hhhdy2.jpg",
+            "direccion": "Cra. 50 #38a-185, Rincon Santos, Bello, Antioquia"
+        },
+        {
+            "name": "Centro comercial Puerta del Norte ",
+            "ubication": [
+                6.3395956,
+                -75.5432161382609
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389307/puerta-del-norte-170419_wfbade.jpg",
+            "direccion": "Autopista Nte. #34-67, Hermosa Provincia, Bello, Antioquia"
+        },
+        {
+            "name": "Centro comercial Santa Fe ",
+            "ubication": [
+                6.19644235,
+                75.5738661019231
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389301/santafe_ozohld.jpg",
+            "direccion": "Carrera 43A, Cl. 7 Sur ##170, El Poblado, Medellín, Antioquia"
+        },
+        {
+            "name": "Centro comercial El Tesoro ",
+            "ubication": [
+                6.1985478,
+                -75.5569319199386
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389267/el_tesoro_dfeibh.jpg",
+            "direccion": "Carrera 25A # 1A Sur - 45"
+        },
+        {
+            "name": "Centro comercial Viva Envigado",
+            "ubication": [
+                6.1763773,
+                -75.5916529260532
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389251/viva_envigado_pf3gj9.jpg",
+            "direccion": "ra. 48 #32B Sur-139, Zona 1, Envigado, Antioquia"
+        },
+        {
+            "name": "Centro comercial Viva Laureles ",
+            "ubication": [
+                6.2460175,
+                -75.601797860225
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389240/cc-viva-laureles-01-640x427_qgr5s6.jpg",
+            "direccion": "Cra. 81 #37-100, Medellín, Laureles"
+        },
+        {
+            "name": "Centro comercial San Diego",
+            "ubication": [
+                6.236876,
+                -75.5691991
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389232/foto-centro-comercial-san-diego_zrldn7.jpg",
+            "direccion": "Cl. 33 #42B-06, La Candelaria, Medellín, Antioquia "
+        },
+        {
+            "name": "Centro Comercial Mayorca",
+            "ubication": [
+                6.16036225,
+                -75.6046704844713
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389224/mayorca_ryqrxo.jpg",
+            "direccion": "Cl. 51 Sur #48-57, Sabaneta, Antioquia"
+        },
+        {
+            "name": "Plaza Minorista",
+            "ubication": [
+                6.25757705,
+                -75.573478470901
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389219/plaza_minorista_medellin_1_0_pgwwiv.jpg",
+            "direccion": "Cl. 55 #57-80, La Candelaria, Medellín, Antioquia"
+        },
+        {
+            "name": "Centro Comercial Palacio Nacional",
+            "ubication": [
+                6.2488083,
+                -75.5723797
+            ],
+            "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391718/palacio_nacional_uvbhx0.jpg",
+            "direccion": "Cra. 52 #48-45, La Candelaria, Medellín"
+        }
+    ]
+}
