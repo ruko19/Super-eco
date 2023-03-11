@@ -4,7 +4,7 @@ import useEventos from "../hooks/useEventos";
 
 const Administracion = () => {
 
-    const { userAdmin } = useEventos();;
+    const { userAdmin } = useEventos();
 
     return (
         <div className='w-full mt-36'>

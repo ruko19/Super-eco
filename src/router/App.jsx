@@ -11,9 +11,6 @@ import { EventosProvider } from "../context/EventosContext"
 import EventoUnico from "../pages/EventoUnico"
 import Ubicaciones from "../pages/Ubicaciones"
 
-
-
-
 function App() {
   return (
     <EventosProvider>
@@ -28,6 +25,7 @@ function App() {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login-admin" element={<LoginAdmin />} />
             <Route path="/ubicaciones" element={<Ubicaciones />} />
+            <Route path="/administracion" element={<Administracion />} />
           </Routes>
         </Layout>
       </BrowserRouter>
