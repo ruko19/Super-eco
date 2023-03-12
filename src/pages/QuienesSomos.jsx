@@ -19,7 +19,7 @@ const QuienesSomos = () => {
                     la cultura y el arte , para ello trabajamos con los ciudadanos, administracion publicas y empresas sobre la importancia del reciclaje en nuestra sociedad
                     para tener un <strong>mejor planeta</strong>.
                 </p>
-                <p className="mb-4 text-left text-4xl"><strong setImage>Misión</strong></p>
+                <p className="mb-4 text-left text-4xl"><strong>Misión</strong></p>
                 <p>Nuestra vision es promover actividaes que minimicen la cantidad de residuos plasticos destinados a disposicion final y que afecten el medio ambiente,
                     nuestra intencion es aportar nuestro grano de arena para el salvar al planeta del cambio climatico producto de los efectos del calentamiento global,
                     contribuyendo con la cadena de actores vinculados al retiro, traslado, recuperacion y reciclaje de desechos

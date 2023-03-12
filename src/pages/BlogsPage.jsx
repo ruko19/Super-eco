@@ -16,7 +16,7 @@ const BlogsPage = () => {
       <div className="col-span-2 ">
         {
           blogs.map((b) => (
-            <BlogItem data={b} />
+            <BlogItem data={b} key={b.id} />
 
           ))
 

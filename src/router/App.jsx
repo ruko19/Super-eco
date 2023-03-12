@@ -3,13 +3,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "../containers/Layout"
 import QuienesSomos from "../pages/QuienesSomos"
 import Eventos from "../pages/Eventos"
-
 import Contacto from "../pages/Contacto"
 import LoginAdmin from "../pages/LoginAdmin"
 import Administracion from "../pages/Administracion"
 import { EventosProvider } from "../context/EventosContext"
 import EventoUnico from "../pages/EventoUnico"
 import Ubicaciones from "../pages/Ubicaciones"
+import { BlogProvider } from "../context/BlogContext"
+import BlogsPage from "../pages/BlogsPage"
+import RutaProtegida from "../utils/RutaProtegida"
 
 
 
@@ -31,6 +33,7 @@ function App() {
               <Route path="/Contacto" element={<Contacto />} />
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/ubicaciones" element={<Ubicaciones />} />
+              <Route path="/administracion" element={<RutaProtegida><Administracion /></RutaProtegida>} />
             </Routes>
           </Layout>
         </BrowserRouter>

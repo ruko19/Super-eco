@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 import {
   getFirestore,
   collection,
@@ -28,6 +29,7 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+export const auth = getAuth(app);
 
 // export const database = getFirestore(app);
 
@@ -44,7 +46,6 @@ export const getData = async () => {
 
   return data;
 };
-
 
 export const getDataBlogs = async () => {
   const snapshot = await getDocs(collection(db, "blogs"));

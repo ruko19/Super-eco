@@ -12,7 +12,7 @@ export const EventosContext = createContext()
 export const EventosProvider = ({ children }) => {
 
     //admin
-    const [userAdmin, setUserAdmin] = useState({})
+    const [isAdmin, setIsAdmin] = useState(false)
 
     const [eventos, setEventos] = useState([]);
 
@@ -87,7 +87,7 @@ export const EventosProvider = ({ children }) => {
                 setImage,
                 descripcion,
                 setDescripcion,
-                userAdmin, setUserAdmin
+                isAdmin, setIsAdmin
             }}>
             {children}
         </EventosContext.Provider>

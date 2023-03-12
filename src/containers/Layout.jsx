@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     return (
         <div>
             {
-                location.pathname.startsWith("/administracion") ? <Administracion /> : <Header />
+                location.pathname.startsWith("/sadministracion") ? <Administracion /> : <Header />
             }
             {children}
 
