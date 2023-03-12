@@ -74,7 +74,7 @@ const ModalBlogRegistro = ({ handleBorrrarModalBLog }) => {
                 onClick={handleBorrrarModalBLog}
             />
             <div className="w-1/2 mx-auto">
-                <h3 className=" text-center mb-12 uppercase text-4xl font-bold text-white">Registrar evento</h3>
+                <h3 className=" text-center mb-12 uppercase text-4xl font-bold text-white">Registrar Blog</h3>
                 <form onSubmit={handleSubmit} className='flex flex-col'>
 
                     <input onChange={(e) => setId(e.target.value)} value={id} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="text" placeholder='Id' />

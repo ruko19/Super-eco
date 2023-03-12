@@ -1,4 +1,4 @@
-import { collection, getDocs, setDoc } from "@firebase/firestore";
+import { collection, deleteDoc, doc, getDocs, setDoc } from "@firebase/firestore";
 
 import { createContext, useEffect, useState } from "react";
 
@@ -89,7 +89,8 @@ export const BlogProvider = ({ children }) => {
             descripcion,
             setDescripcion,
             blogId,
-            setBlogId
+            setBlogId,
+            fechDataBlogs,
 
 
 
