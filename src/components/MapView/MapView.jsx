@@ -18,7 +18,8 @@ const MapView = () => {
                 -75.6038790868728
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/v1678376506/IMG_0315-1024x640_g6qroz.jpg",
-            "direccion": "Cl. 30A #82A-26, Medellín, Belén, Medellín, Antioquia"
+            "direccion": "Cl. 30A #82A-26, Medellín, Belén, Medellín, Antioquia",
+            "id": "1"
         },
         {
             "name": "Centro comercial Arkadia",
@@ -27,7 +28,8 @@ const MapView = () => {
                 -75.5946511285194
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378448/arkadia-from-the-outside_w5yuxu.jpg",
-            "direccion": "Cra. 70 #1-141,Belén, Medellín, Antioquia"
+            "direccion": "Cra. 70 #1-141,Belén, Medellín, Antioquia",
+            "id": "2"
         },
         {
             "name": "Centro comercial Unicentro",
@@ -36,7 +38,8 @@ const MapView = () => {
                 -75.5857707
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378566/unicentro-medellin-el_ipxoru.jpg",
-            "direccion": "Cra. 66B #34A-76, Laureles - Estadio"
+            "direccion": "Cra. 66B #34A-76, Laureles - Estadio",
+            "id": "3"
         },
         {
             "name": "Centro comercial Oviedo",
@@ -45,7 +48,8 @@ const MapView = () => {
                 -75.5751482373786
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678378769/5eS6QmHq5RlXlqMO0llM90gAnHPHQGpXF2Eqk4WMBTg_gkqzhj.jpg",
-            "direccion": "Calle 30, Cra. 43A, Medellín, Antioquia"
+            "direccion": "Calle 30, Cra. 43A, Medellín, Antioquia",
+            "id": "4"
         },
         {
             "name": "Centro comercial Fabricato",
@@ -54,7 +58,8 @@ const MapView = () => {
                 -75.5585864595439
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_200,w_320/v1678389344/parque_fabricato_hhhdy2.jpg",
-            "direccion": "Cra. 50 #38a-185, Rincon Santos, Bello, Antioquia"
+            "direccion": "Cra. 50 #38a-185, Rincon Santos, Bello, Antioquia",
+            "id": "5"
         },
         {
             "name": "Centro comercial Puerta del Norte ",
@@ -63,7 +68,8 @@ const MapView = () => {
                 -75.5432161382609
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389307/puerta-del-norte-170419_wfbade.jpg",
-            "direccion": "Autopista Nte. #34-67, Hermosa Provincia, Bello, Antioquia"
+            "direccion": "Autopista Nte. #34-67, Hermosa Provincia, Bello, Antioquia",
+            "id": "6"
         },
         {
             "name": "Centro comercial Santa Fe ",
@@ -72,7 +78,8 @@ const MapView = () => {
                 75.5738661019231
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389301/santafe_ozohld.jpg",
-            "direccion": "Carrera 43A, Cl. 7 Sur ##170, El Poblado, Medellín, Antioquia"
+            "direccion": "Carrera 43A, Cl. 7 Sur ##170, El Poblado, Medellín, Antioquia",
+            "id": "7"
         },
         {
             "name": "Centro comercial El Tesoro ",
@@ -81,7 +88,8 @@ const MapView = () => {
                 -75.5569319199386
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389267/el_tesoro_dfeibh.jpg",
-            "direccion": "Carrera 25A # 1A Sur - 45"
+            "direccion": "Carrera 25A # 1A Sur - 45",
+            "id": "8"
         },
         {
             "name": "Centro comercial Viva Envigado",
@@ -90,7 +98,8 @@ const MapView = () => {
                 -75.5916529260532
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389251/viva_envigado_pf3gj9.jpg",
-            "direccion": "ra. 48 #32B Sur-139, Zona 1, Envigado, Antioquia"
+            "direccion": "ra. 48 #32B Sur-139, Zona 1, Envigado, Antioquia",
+            "id": "9"
         },
         {
             "name": "Centro comercial Viva Laureles ",
@@ -99,7 +108,8 @@ const MapView = () => {
                 -75.601797860225
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389240/cc-viva-laureles-01-640x427_qgr5s6.jpg",
-            "direccion": "Cra. 81 #37-100, Medellín, Laureles"
+            "direccion": "Cra. 81 #37-100, Medellín, Laureles",
+            "id": "10"
         },
         {
             "name": "Centro comercial San Diego",
@@ -108,7 +118,8 @@ const MapView = () => {
                 -75.5691991
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389232/foto-centro-comercial-san-diego_zrldn7.jpg",
-            "direccion": "Cl. 33 #42B-06, La Candelaria, Medellín, Antioquia "
+            "direccion": "Cl. 33 #42B-06, La Candelaria, Medellín, Antioquia ",
+            "id": "11"
         },
         {
             "name": "Centro Comercial Mayorca",
@@ -117,7 +128,8 @@ const MapView = () => {
                 -75.6046704844713
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389224/mayorca_ryqrxo.jpg",
-            "direccion": "Cl. 51 Sur #48-57, Sabaneta, Antioquia"
+            "direccion": "Cl. 51 Sur #48-57, Sabaneta, Antioquia",
+            "id": "12"
         },
         {
             "name": "Plaza Minorista",
@@ -126,7 +138,8 @@ const MapView = () => {
                 -75.573478470901
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678389219/plaza_minorista_medellin_1_0_pgwwiv.jpg",
-            "direccion": "Cl. 55 #57-80, La Candelaria, Medellín, Antioquia"
+            "direccion": "Cl. 55 #57-80, La Candelaria, Medellín, Antioquia",
+            "id": "13"
         },
         {
             "name": "Centro Comercial Palacio Nacional",
@@ -135,7 +148,8 @@ const MapView = () => {
                 -75.5723797
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391718/palacio_nacional_uvbhx0.jpg",
-            "direccion": "Cra. 52 #48-45, La Candelaria, Medellín"
+            "direccion": "Cra. 52 #48-45, La Candelaria, Medellín",
+            "id": "14"
         },
         {
             "name": "Ciudad del rio. ",
@@ -145,7 +159,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391463/parques-ciudad-del-rio-head_k9skpd.jpg",
-            "direccion": "# 43g, Cl. 19 #58155"
+            "direccion": "# 43g, Cl. 19 #58155",
+            "id": "15"
         },
         {
             "name": "Parque de los deseos",
@@ -154,7 +169,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391458/50MF045_PARQUE-DE-LOS-DESEOS_h6dsac.jpg",
-            "direccion": "Cl. 71, Aranjuez, Medellín"
+            "direccion": "Cl. 71, Aranjuez, Medellín",
+            "id": "16"
         },
         {
             "name": "Plaza de san antonio",
@@ -164,7 +180,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391453/BPARQUE-DE-SAN-ANTONIO-35.JPG1__khunuh.jpg",
-            "direccion": "Cl 44 #50, La Candelaria, Medellín"
+            "direccion": "Cl 44 #50, La Candelaria, Medellín",
+            "id": "17"
         },
         {
             "name": "Parque de bolivar",
@@ -175,7 +192,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391436/parque_de_bolivar_lc9lpm.jpg",
-            "direccion": "Cra. 49 #5596, La Candelaria, Medellín"
+            "direccion": "Cra. 49 #5596, La Candelaria, Medellín",
+            "id": "18"
         },
         {
             "name": "Comuna 13",
@@ -186,7 +204,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391424/comuna_13_jjs2z1.jpg",
-            "direccion": "Cl. 39c #109-24, Veinte De Julio, Medellín, San Javier"
+            "direccion": "Cl. 39c #109-24, Veinte De Julio, Medellín, San Javier",
+            "id": "19"
         },
         {
             "name": "Parque berrio",
@@ -197,7 +216,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391376/parque_berrio_fx1gx9.jpg",
-            "direccion": "Cl. 50, La Candelaria, Medellín"
+            "direccion": "Cl. 50, La Candelaria, Medellín",
+            "id": "20"
         },
         {
             "name": "Cerro nutibara (pueblito paisa)",
@@ -208,7 +228,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391369/pueblito_paisa_n4eect.jpg",
-            "direccion": "Medellín, Belén"
+            "direccion": "Medellín, Belén",
+            "id": "21"
         },
         {
             "name": "Museo el castillo",
@@ -218,7 +239,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391345/Museo_el_Castillo_1_fjeyev.jpg",
-            "direccion": "Cl. 9 Sur #32-269, El Poblado, Medellín"
+            "direccion": "Cl. 9 Sur #32-269, El Poblado, Medellín",
+            "id": "22"
         },
         {
             "name": "Parque Norte",
@@ -229,7 +251,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391340/parque_nrte_b3deqa.jpg",
-            "direccion": "Cra. 53 #76-115, Aranjuez, Medellín"
+            "direccion": "Cra. 53 #76-115, Aranjuez, Medellín",
+            "id": "23"
         },
         {
             "name": "Parque del poblado",
@@ -240,7 +263,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391329/parque-el-poblado_s2uxqa.jpg",
-            "direccion": "El Poblado, Medellín"
+            "direccion": "El Poblado, Medellín",
+            "id": "24"
         },
         {
             "name": "Centro comercial punto clave",
@@ -251,7 +275,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391597/PUNTO-CLAVE-52-1536x976_etgiyb.jpg",
-            "direccion": "Cl. 27 #46-70, El Poblado, Medellín"
+            "direccion": "Cl. 27 #46-70, El Poblado, Medellín",
+            "id": "25"
         },
         {
             "name": "Villa de aburra",
@@ -261,7 +286,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391585/villa_de_aburra_pcaz5v.jpg",
-            "direccion": "#32-, Cra. 80A #32b26, Medellín, Antioquia"
+            "direccion": "#32-, Cra. 80A #32b26, Medellín, Antioquia",
+            "id": "26"
         },
         {
             "name": "Parque de botero ",
@@ -271,7 +297,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391525/plaza-botero_eplxbg.jpg",
-            "direccion": "Av. Carabobo, La Candelaria, Medellín"
+            "direccion": "Av. Carabobo, La Candelaria, Medellín",
+            "id": "27"
         },
         {
             "name": "Aeroparque Juan pablo 2 ",
@@ -281,7 +308,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391512/juan_pablo_2_njyvic.jpg",
-            "direccion": "Cra. 70 #16, Guayabal, Medellín"
+            "direccion": "Cra. 70 #16, Guayabal, Medellín",
+            "id": "28"
         },
         {
             "name": "Parque explora ",
@@ -291,7 +319,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391509/Parque_Explora__Medell%C3%ADn__Colombia_vumfuy.jpg",
-            "direccion": "Cra. 52 #73-75, Aranjuez, Medellín"
+            "direccion": "Cra. 52 #73-75, Aranjuez, Medellín",
+            "id": "29"
         },
         {
             "name": "Jardin botanico",
@@ -300,7 +329,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391503/bjardin-botanico-51-jpg_39891650_20220430172149_s1qbng.jpg",
-            "direccion": "Cl. 73 #51d-14, Aranjuez, Medellín"
+            "direccion": "Cl. 73 #51d-14, Aranjuez, Medellín",
+            "id": "30"
         },
         {
             "name": "Parque arvi",
@@ -309,7 +339,8 @@ const MapView = () => {
 
             ],
             "img": "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_320/v1678391499/cparque-arvi12-23_37413650_20210324185015_seadw8.jpg ",
-            "direccion": "Via a Piedras Blancas, Medellín, Antioquia "
+            "direccion": "Via a Piedras Blancas, Medellín, Antioquia ",
+            "id": "31"
         }
 
     ]

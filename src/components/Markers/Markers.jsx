@@ -7,7 +7,7 @@ import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 const Markers = ({ data }) => {
 
     const markers = data.map(u => (
-        <Marker position={u.ubication} >
+        <Marker position={u.ubication} key={u.id}>
             <Popup>
                 <h1 className='text-3xl font-extrabold'>{u.name}</h1>
                 <img className='img1 w-full' src={u.img} alt="" />

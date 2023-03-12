@@ -1,51 +1,35 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
+import { auth } from '../../api/firebaseConfig';
+import { signInWithEmailAndPassword, } from "firebase/auth"
 import useEventos from '../../hooks/useEventos';
+import { useState } from 'react';
 
 const LoginAdminComponent = () => {
 
-    const { userAdmin, setUserAdmin } = useEventos();
-
+    const [error, setError] = useState("")
+    const { setIsAdmin } = useEventos();
     const navigate = useNavigate();
-
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const administradores = [
-        {
-            "nombre": "Alejandro",
-            "correo": "alejandro.supereco@gmail.com",
-            "password": "SuperEco2023",
-        }, {
-            "nombre": "Sara",
-            "correo": "sara.supereco@gmail.com",
-            "password": "SuperEco2023"
-        }
-    ]
-
-
-    const onSubmit = data => {
-        setUserAdmin({
-            nombre: data.nombre,
-            correo: data.email,
-            password: data.password
-        })
-    };
-
-
-    administradores.forEach((administrador) => {
-        if (administrador.nombre === userAdmin.nombre && administrador.correo === userAdmin.correo && administrador.password === userAdmin.password) {
+    function login(email, password) {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+    const onSubmit = async (data) => {
+        setError("")
+        try {
+            await login(data.email, data.password)
             navigate("/administracion")
-            return;
+            setIsAdmin(true)
+        } catch (error) {
+            setError(error.message)
         }
-    })
-
+    };
 
     return (
         <>
             <form className='flex flex-col w-1/2 mx-auto' onSubmit={handleSubmit(onSubmit)}>
-                {errors.nombre && <span className='bg-red-700 p-5 rounded-lg text-center text-white mb-5'>El campo Nombre es requerido</span>}
-                <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8'  {...register("nombre", { required: true, maxLength: 20 })} type="text" placeholder='Nombre' />
+                {error && <p>{error}</p>}
                 {errors.email && <span className='bg-red-700 p-5 rounded-lg text-center text-white mb-5'>El campo correo es requerido</span>}
                 <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="email" {...register("email", {
                     required: "required",
@@ -62,8 +46,6 @@ const LoginAdminComponent = () => {
         </>
     )
 }
-
 export default LoginAdminComponent
-
 
 //<Link to={"/administracion"}>
