@@ -32,7 +32,7 @@ const ListaBlog = () => {
                         <p className='font-light'>Dia: <span className='font-medium uppercase'>{e.dia}</span></p>
                         <p className='font-light'>Mes: <span className='font-medium uppercase'>{e.mes}</span></p>
                         <p className='font-light'>Descripcion: <span className='font-medium uppercase'>{e.descripcion}</span></p>
-                        <img src={e.imagen} alt="imagen evento" width="150" />
+                        <img src={e.image} alt="imagen evento" width="150" />
                         <div className='mt-5'>
                             <button className="bg-gray-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
                             <button className="bg-red-500 p-3 rounded-lg text-white" onClick={() => { handleEliminar(e.id) }}>Elimar</button>
