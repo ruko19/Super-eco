@@ -10,6 +10,8 @@ import Administracion from "../pages/Administracion"
 import { EventosProvider } from "../context/EventosContext"
 import EventoUnico from "../pages/EventoUnico"
 import Ubicaciones from "../pages/Ubicaciones"
+import { BlogProvider } from "../context/BlogContext"
+import BlogsPage from "../pages/BlogsPage"
 
 
 

@@ -1,5 +1,5 @@
 
-import { async } from "@firebase/util";
+
 import { useState } from "react";
 import { FaRegTimesCircle } from "react-icons/fa";
 import Swal from 'sweetalert2'
@@ -27,7 +27,9 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         setMessage("");
+
         if (id === "" || organizador === "" || dia === "" || mes === "" || titulo === "" || lugar === "" || image === "" || descripcion === "") {
             setMessage({
                 error: true, msg: Swal.fire({
@@ -53,11 +55,11 @@ const ModalEventosRegistro = ({ handleBorrarModal }) => {
             })
             console.log(message);
             setId("")
-            setOrganizador("")
+
             setDia("")
             setMes("")
             setTitulo("")
-            setLugar("")
+
             setImage("")
             setDescripcion("")
         } catch (error) {

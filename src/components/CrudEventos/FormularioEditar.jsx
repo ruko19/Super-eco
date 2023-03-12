@@ -1,7 +1,6 @@
 import useEventos from "../../hooks/useEventos"
 import Swal from 'sweetalert2'
-import { doc, updateDoc } from "firebase/firestore";
-import { db } from "../../api/firebaseConfig";
+
 import { useState } from "react";
 
 
