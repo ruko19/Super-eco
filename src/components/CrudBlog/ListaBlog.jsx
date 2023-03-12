@@ -5,7 +5,7 @@ import { useBlogs } from "../../hooks/useBlogs"
 
 const ListaBlog = () => {
 
-    const { blogs } = useBlogs()
+    const { blogs, fechDataBlogs, eliminarBlog } = useBlogs()
 
     const blosgReverse = [...blogs].reverse()
 
@@ -15,6 +15,10 @@ const ListaBlog = () => {
 
     }, [blogs])
 
+    const handleEliminar = async (id) => {
+        await eliminarBlog(id)
+        fechDataBlogs()
+    }
 
     return (
 
