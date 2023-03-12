@@ -6,16 +6,16 @@ import { useState } from "react";
 
 
 const FormularioEditar = () => {
-    const { organizador, id, dia, getEventos, mes, titulo, lugar, editarEvento, setOrganizador, setDia, setMes, setTitulo, setLugar, image, setImage, descripcion,
+    const { fechDataBlogs, organizador, id, dia, editarBlog, getEventos, mes, titulo, lugar, editarEvento, setOrganizador, setDia, setMes, setTitulo, setLugar, image, setImage, descripcion,
         setDescripcion } = useBlogs();
     const [success, setSuccess] = useState(null)
     const newFields = {
         id,
-        organizador,
+
         dia,
         mes,
         titulo,
-        lugar,
+
         image,
         descripcion
     };
@@ -27,10 +27,10 @@ const FormularioEditar = () => {
         // }
         try {
             setSuccess(false)
-            await editarEvento(id, newFields)
-            console.log(typeof id, newFields);
+            await editarBlog(id, newFields)
+
             setSuccess(true)
-            getEventos();
+            fechDataBlogs();
 
 
         } catch (error) {

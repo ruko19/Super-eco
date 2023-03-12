@@ -5,7 +5,8 @@ import { useBlogs } from "../../hooks/useBlogs"
 
 const ListaBlog = () => {
 
-    const { blogs, fechDataBlogs, eliminarBlog } = useBlogs()
+    const { blogs, fechDataBlogs, eliminarBlog,
+        setId, setDia, setTitulo, setImage, setMes, setDescripcion } = useBlogs()
 
     const blosgReverse = [...blogs].reverse()
 
@@ -20,6 +21,18 @@ const ListaBlog = () => {
         fechDataBlogs()
     }
 
+    const handleEditar = async (e) => {
+        setId(e.id)
+
+        setDia(e.dia)
+        setMes(e.mes)
+        setTitulo(e.titulo)
+
+        setImage(e.image)
+        setDescripcion(e.descripcion)
+    }
+
+
     return (
 
         <div className='md:w-1/2 text-center md:h-[400px] overflow-y-scroll' >
@@ -32,7 +45,7 @@ const ListaBlog = () => {
                         <p className='font-light'>Dia: <span className='font-medium uppercase'>{e.dia}</span></p>
                         <p className='font-light'>Mes: <span className='font-medium uppercase'>{e.mes}</span></p>
                         <p className='font-light'>Descripcion: <span className='font-medium uppercase'>{e.descripcion}</span></p>
-                        <img src={e.imagen} alt="imagen evento" width="150" />
+                        <img src={e.image} alt="imagen evento" width="150" />
                         <div className='mt-5'>
                             <button className="bg-gray-500 p-3 rounded-lg text-white" onClick={() => { handleEditar(e) }}>Editar</button>{"  "}
                             <button className="bg-red-500 p-3 rounded-lg text-white" onClick={() => { handleEliminar(e.id) }}>Elimar</button>
