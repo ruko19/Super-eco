@@ -47,7 +47,7 @@ const Home = () => {
 
 
                 <section>
-                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Blog</span> <br />últimas entradas</h2>
+                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Iniciativas</span> <br />ambientales</h2>
                     <div className="container">
                         <TipDayList />
                     </div>
