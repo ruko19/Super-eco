@@ -12,20 +12,19 @@ import Ubicaciones from "../pages/Ubicaciones"
 import { BlogProvider } from "../context/BlogContext"
 import BlogsPage from "../pages/BlogsPage"
 import RutaProtegida from "../utils/RutaProtegida"
-
+import BlogUnico from "../pages/BlogUnico"
 
 
 
 function App() {
   return (
-
     <BlogProvider>
-
       <EventosProvider>
         <BrowserRouter>
           <Layout>
             <Routes>
-              <Route path="/evento/:id/:nombre" element={<EventoUnico />} />
+              <Route path="/evento/:id" element={<EventoUnico />} />
+              <Route path="/blog/:id" element={<BlogUnico />} />
               <Route path="/" element={<Home />} />
               <Route path="/quienes-somos" element={<QuienesSomos />} />
               <Route path="/eventos" element={<Eventos />} />
@@ -39,7 +38,6 @@ function App() {
         </BrowserRouter>
       </EventosProvider>
     </BlogProvider>
-
   )
 }
 

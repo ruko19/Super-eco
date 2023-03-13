@@ -4,21 +4,17 @@ import { useState } from "react"
 import ModalBlogRegistro from "./ModalBlogRegistro"
 
 const BlogComponente = () => {
-    const [modal, setModal] = useState(false)
+    const [modalBlog, setModalBlog] = useState(false)
 
-    const mostrarModal = () => {
-        setModal(true)
-    }
-
-    const handleBorrarModal = () => {
-        setModal(false)
+    const mostrarModallBlog = () => {
+        setModalBlog(true)
     }
 
     return (
         <>
             <div className="mt-36">
                 <button
-                    onClick={() => mostrarModal()}
+                    onClick={() => mostrarModallBlog()}
                     className="mb-12 uppercase bg-gray-500 p-3 rounded-lg text-white">Insertar nuevo Blog</button>
                 <div className="md:flex justify-between">
                     <FormularioEditarBlog />
@@ -26,7 +22,7 @@ const BlogComponente = () => {
                 </div>
             </div>
 
-            {modal ? <ModalBlogRegistro handleBorrarModal={handleBorrarModal} /> : ""}
+            {modalBlog ? <ModalBlogRegistro setModalBlog={setModalBlog} /> : ""}
         </>
     )
 }
