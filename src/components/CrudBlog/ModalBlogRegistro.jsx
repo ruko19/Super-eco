@@ -91,7 +91,7 @@ const ModalBlogRegistro = ({ setModalBlog }) => {
                     <input onChange={(e) => setTitulo(e.target.value)} value={titulo} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Nombre evento' />
 
 
-                    <textarea cols="30" rows="5" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Descripcion' ></textarea>
+                    <input onChange={(e) => setDescripcion(e.target.value)} value={descripcion} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Descripcion' />
 
                     <input onChange={(e) => setImage(e.target.value)} value={image} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
 
