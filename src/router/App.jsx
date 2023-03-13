@@ -13,6 +13,7 @@ import { BlogProvider } from "../context/BlogContext"
 import BlogsPage from "../pages/BlogsPage"
 import RutaProtegida from "../utils/RutaProtegida"
 import BlogUnico from "../pages/BlogUnico"
+import IniciativaUnica from "../components/IniciativaUnica/IniciativaUnica"
 
 
 
@@ -33,6 +34,7 @@ function App() {
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/ubicaciones" element={<Ubicaciones />} />
               <Route path="/administracion" element={<RutaProtegida><Administracion /></RutaProtegida>} />
+              <Route path="/iniciativas" element={<IniciativaUnica />} />
             </Routes>
           </Layout>
         </BrowserRouter>

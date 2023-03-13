@@ -1,14 +1,16 @@
 import React from 'react'
 import img2 from "../../../public/img2.jpg"
 
-const TipDay = () => {
+const TipDay = ({ data }) => {
+
+
     return (
         <div className='shadow-lg'>
             <figure>
-                <img src={img2} alt="" />
+                <img src={data.img} alt="" />
             </figure>
             <div className='bg-green-600 p-5'>
-                <h3 className='text-white text-4xl'>Tip del Dia</h3>
+                <h3 className='text-white text-2xl'>{data.titulo}</h3>
             </div>
         </div>
     )
