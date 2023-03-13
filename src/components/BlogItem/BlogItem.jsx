@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+
 const BlogItem = ({ data }) => {
     const { image, dia, mes, id, titulo, descripcion } = data
     return (
