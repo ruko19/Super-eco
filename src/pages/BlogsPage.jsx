@@ -1,7 +1,4 @@
-
-import { useEffect, useState } from "react";
-import { getDataBlogs } from "../api/firebaseConfig";
-import BlogItem from "../components/Blogitem/BlogItem";
+import BlogItem from "../components/BlogItem/BlogItem";
 import { useBlogs } from "../hooks/useBlogs";
 
 const BlogsPage = () => {
@@ -11,9 +8,9 @@ const BlogsPage = () => {
 
 
   return (
-    <div className="container md:grid grid-cols-3 gap-8 ">
+    <div className="container md:grid grid-cols-2 gap-8 ">
 
-      <div className="col-span-2 ">
+      <div>
         {
           blogs.map((b) => (
             <BlogItem data={b} key={b.id} />

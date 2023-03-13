@@ -3,10 +3,14 @@ import { FaRegTimesCircle } from "react-icons/fa";
 import Swal from 'sweetalert2'
 import { useBlogs } from "../../hooks/useBlogs";
 
-const ModalBlogRegistro = ({ handleBorrrarModalBLog }) => {
+const ModalBlogRegistro = ({ setModalBlog }) => {
     const { createBlog, dia, setDia, mes, setMes, titulo, setTitulo, id, setId, image, setImage, descripcion,
         setDescripcion } = useBlogs()
     const [message, setMessage] = useState({ error: false, msg: "" });
+
+    const handleBorrarModalBlog = () => {
+        setModalBlog(false)
+    }
 
     const newBlog = {
         id,
@@ -71,7 +75,7 @@ const ModalBlogRegistro = ({ handleBorrrarModalBLog }) => {
 
             <FaRegTimesCircle
                 className="text-white text-4xl m-8 cursor-pointer"
-                onClick={handleBorrrarModalBLog}
+                onClick={handleBorrarModalBlog}
             />
             <div className="w-1/2 mx-auto">
                 <h3 className=" text-center mb-12 uppercase text-4xl font-bold text-white">Registrar Blog</h3>
@@ -87,7 +91,7 @@ const ModalBlogRegistro = ({ handleBorrrarModalBLog }) => {
                     <input onChange={(e) => setTitulo(e.target.value)} value={titulo} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Nombre evento' />
 
 
-                    <input onChange={(e) => setDescripcion(e.target.value)} value={descripcion} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Descripcion' />
+                    <textarea cols="30" rows="5" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Descripcion' ></textarea>
 
                     <input onChange={(e) => setImage(e.target.value)} value={image} className='p-3 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="string" placeholder='Imagen' />
 

@@ -1,6 +1,5 @@
 import Header from "../layouts/Header"
 import Footer from "../layouts/Footer"
-import Administracion from "../pages/Administracion"
 import { useLocation } from "react-router-dom"
 
 const Layout = ({ children }) => {
@@ -8,7 +7,7 @@ const Layout = ({ children }) => {
     return (
         <div>
             {
-                location.pathname.startsWith("/sadministracion") ? <Administracion /> : <Header />
+                location.pathname.startsWith("/administracion") ? null : <Header />
             }
             {children}
 

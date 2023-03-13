@@ -28,7 +28,6 @@ const FormularioEditar = () => {
         try {
             setSuccess(false)
             await editarBlog(id, newFields)
-
             setSuccess(true)
             fechDataBlogs();
 
