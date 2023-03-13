@@ -4,7 +4,7 @@ const BlogsPage = () => {
 
   const { blogs } = useBlogs()
   return (
-    <div className="container gap-8 ">
+    <div className="container flex gap-8 ">
       <div>
         {
           blogs.map((b) => (
@@ -14,6 +14,8 @@ const BlogsPage = () => {
 
         }
       </div>
+
+
 
     </div>
   );

@@ -34,7 +34,7 @@ function App() {
               <Route path="/login-admin" element={<LoginAdmin />} />
               <Route path="/ubicaciones" element={<Ubicaciones />} />
               <Route path="/administracion" element={<RutaProtegida><Administracion /></RutaProtegida>} />
-              <Route path="/iniciativas" element={<IniciativaUnica />} />
+              <Route path="/iniciativa/:id" element={<IniciativaUnica />} />
             </Routes>
           </Layout>
         </BrowserRouter>

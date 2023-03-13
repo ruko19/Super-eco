@@ -45,6 +45,7 @@ const Home = () => {
                     </div>
                 </section>
 
+                <hr />
 
                 <section className="p-9">
                     <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Iniciativas</span> <br />a las que puedes postularte.</h2>
@@ -54,7 +55,6 @@ const Home = () => {
 
                 </section>
 
-                <hr />
 
 
                 <section className="container grid grid-cols-1 md:grid-cols-2 gap-28 p-20">

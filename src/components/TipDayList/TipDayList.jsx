@@ -6,6 +6,7 @@ const TipDayList = () => {
 
     const iniciativas = [
         {
+            "id": "1",
             "titulo": "Caminata Ecológica.",
             "description": `caminata realizada con el fin de promover la valoracion y el cuidado del medio ambiente y la naturaleza 
 
@@ -22,6 +23,7 @@ const TipDayList = () => {
 
         },
         {
+            "id": "2",
             "titulo": "Taller para hacer productos reciclables.",
             "description": `Consistirá en hacer una campaña para fomentar el reciclaje y se dotará a las aulas con
             contenedores de reciclaje. Se procederá a la realización de manualidades a partir de
@@ -29,6 +31,7 @@ const TipDayList = () => {
             "img": "../../../public/jas-min-CIItgnBEOgw-unsplash.jpg"
         },
         {
+            "id": "3",
             "titulo": "Proyectos ambientales escolares.",
             "description": ` Concienciar a los pequeños de los problemas ambientales y mostrarse sensibles ante ellos.
             Fomentar interés en la participación y mejora del medio ambiente.

@@ -14,7 +14,7 @@ const Navegacion = () => {
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/quienes-somos"}>Nosotros</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/ubicaciones"}>¿Dónde está Súper Eco?</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/eventos"}>Eventos</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/Blog"}>Blog</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/blog"}>Blog</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "bg-green-600 p-12 text-white" : "p-12")} to={"/Contacto"}>Contacto</NavLink>
                 </ul>
             </nav>
