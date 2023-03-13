@@ -28,7 +28,7 @@ const Home = () => {
 
 
                 <section className="relative" >
-                    <h2 className=" mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">El reciclaje <br /> </span>algunos tips y consejos</h2>
+                    <h2 className=" mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">El reciclaje <br /> </span>algunos tips y consejos.</h2>
 
                     <div className="container">
                         <TipsTargetList />
@@ -39,22 +39,22 @@ const Home = () => {
 
 
                 <section className="mb-40 ">
-                    <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">Eventos</span> <br /> más esperados</h2>
+                    <h2 className="mt-40 text-7xl font-bold mb-40 "><span className="text-green-600">Eventos</span> <br /> más esperados.</h2>
                     <div className="  container relative">
                         <EventsComponents />
                     </div>
                 </section>
 
 
-                <section>
-                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Iniciativas</span> <br />ambientales</h2>
+                <section className="p-9">
+                    <h2 className="mt-40 text-7xl font-bold mb-40"><span className="text-green-600" >Iniciativas</span> <br />a las que puedes postularte.</h2>
                     <div className="container">
                         <TipDayList />
                     </div>
-                    <button
-                        className=" bg-green-600 px-6 py-2 rounded-xl mt-14 text-white flex  items-center gap-4 mx-auto">Más articulos aquí <TbClick className="text-3xl" />
-                    </button>
+
                 </section>
+
+                <hr />
 
 
                 <section className="container grid grid-cols-1 md:grid-cols-2 gap-28 p-20">

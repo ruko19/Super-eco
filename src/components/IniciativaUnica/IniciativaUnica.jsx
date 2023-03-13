@@ -1,8 +1,8 @@
 import React from 'react'
-import TipDay from '../TipDay/TipDay'
+
+const IniciativaUnica = () => {
 
 
-const TipDayList = () => {
 
     const iniciativas = [
         {
@@ -29,7 +29,7 @@ const TipDayList = () => {
             "img": "../../../public/jas-min-CIItgnBEOgw-unsplash.jpg"
         },
         {
-            "titulo": "Proyectos ambientales escolares.",
+            "titulo": "Participar en proyectos ambientales escolares.",
             "description": ` Concienciar a los pequeños de los problemas ambientales y mostrarse sensibles ante ellos.
             Fomentar interés en la participación y mejora del medio ambiente.
             Desarrollar la capacidad de los pequeños de informarse acerca de cosas que no saben acerca
@@ -42,17 +42,8 @@ const TipDayList = () => {
 
 
     return (
-        <div className='grid lg:grid-cols-3 gap-28 sm:grid-cols-1'>
-
-            {
-                iniciativas.map((e) => (
-
-                    <TipDay key={e.id} data={e} />
-                ))
-            }
-
-        </div>
+        <div>IniciativaUnica</div>
     )
 }
 
-export default TipDayList
+export default IniciativaUnica
