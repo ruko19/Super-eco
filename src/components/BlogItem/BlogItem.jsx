@@ -4,7 +4,7 @@ const BlogItem = ({ data }) => {
     return (
         <div className="md:flex items-center gap-8 mb-6">
             <div>
-                <img src="http://kodeforest.net/html/eco-friendly/extra-images/blog_listing_img_01.jpg" alt="imagen blog" />
+                <img src={data.image} alt="imagen blog" />
             </div>
             <div>
                 <div className="md:flex items-center gap-6">

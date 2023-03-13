@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@reduxjs/toolkit": "^1.9.3",
     "firebase": "^9.17.2",
     "leaflet": "^1.9.3",
