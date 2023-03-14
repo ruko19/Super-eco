@@ -15,21 +15,22 @@ const FormInit = () => {
         const templateId = "template_mum6kbs";
 
         const apiKey = "EHCLJq_9bPGUMK81T"
-
         emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
             .then(res => res.status === 200 ? Swal.fire(
                 'Hola tu registro se ha enviado a tu correo',
                 'por favor revisalo',
                 'success'
             ) : null)
+        formReset()
+
             .catch(error => console.error(error))
-
-
-
+    }
+    const formReset = () => {
+        document.getElementById("formInit").reset();
     }
     return (
 
-        <form ref={refForm} onSubmit={handleSubmit} className=' mt-8 flex flex-col border p-10 rounded-lg ' action="">
+        <form id='formInit' ref={refForm} onSubmit={handleSubmit} className=' mt-8 flex flex-col border p-10 rounded-lg ' action="">
             <input name='username' className='border mt-9 p-6 rounded-2xl outline-none' type="text" placeholder='Nombre' />
             <input name='email' className='border mt-9 p-6 rounded-2xl outline-none' type="email" placeholder='Correo' />
 
