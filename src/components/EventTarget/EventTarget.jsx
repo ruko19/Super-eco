@@ -8,7 +8,7 @@ const EventTarget = ({ data }) => {
     return (
         <Link to={"/eventos"} state={{ dia, mes, titulo, descripcion, organizador, lugar, image }}
         >
-            <div className='flex items-center  gap-12  shadow-sm  rounded-lg  '>
+            <div className='flex flex-col md:flex-row items-center  gap-12  shadow-sm  rounded-lg  '>
                 <figure className='inline-block bg-green-600 p-5 rounded-full text-white border-8 border-white'>
                     <FaRecycle className='text-7xl' />
                 </figure>
