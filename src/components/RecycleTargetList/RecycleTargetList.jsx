@@ -13,7 +13,7 @@ const RecycleTargetList = () => {
     },
     {
       id: "2",
-      icon: ".https://res.cloudinary.com/dwvchf8al/image/upload/v1678831561/icono_x3wrku.png",
+      icon: "https://res.cloudinary.com/dwvchf8al/image/upload/v1678831561/icono_x3wrku.png",
       title: "REUTILIZAR",
       description:
         "Utiliza la creatividad y dales otro uso a los objetos que parecen no tenerlo.",
