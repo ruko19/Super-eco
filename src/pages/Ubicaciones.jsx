@@ -18,9 +18,9 @@ const Ubicaciones = () => {
                 <p className="font-bold text-7xl">Valle de Aburrá</p>
                 <p className="font-light mb-8 mt-8">
                   {" "}
-                  Estamos ubicados en todo el Valle de Aburra, en diferentes
-                  puntos estrategicos y de alta afluencia de personas ,
-                  encuentra tu punto mas cercano y contribuye con tu grano de
+                  Estamos ubicados en todo el Valle de Aburrá, en diferentes
+                  puntos estratégicos y de alta afluencia de personas,
+                  encuentra tu punto más cercano y contribuye con tu grano de
                   arena.
                   <br /> <strong>¡ JUNTOS LO PODEMOS LOGRAR !</strong>
                 </p>

@@ -8,7 +8,7 @@ const TipDayList = () => {
         {
             "id": "1",
             "titulo": "Caminata Ecológica.",
-            "description": `caminata realizada con el fin de promover la valoracion y el cuidado del medio ambiente y la naturaleza 
+            "description": `caminata realizada con el fin de promover la valoracion y el cuidado del medio ambiente y la naturaleza, 
 
             Se hacen recorridos en ecosistemas con gran variedad de fauna y flora
             Se aprecian hermosos paisajes desde la altura de las montañas hasta el ocaso de la llanura

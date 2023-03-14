@@ -9,7 +9,7 @@ const RecycleTargetList = () => {
         icon: "../../../public/icono.png",
         title: "RECICLAR",
         description:
-          "Reciclar es mas que una accion, es el valor de la responsabilidad por preservar los recursos naturales.",
+          "Reciclar es más que una acción, es el valor de la responsabilidad por preservar los recursos naturales.",
       },
       {
         id: "2",
