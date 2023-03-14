@@ -19,7 +19,7 @@ const FormInit = () => {
         emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
             .then(res => res.status === 200 ? Swal.fire(
                 'Hola tu registro se ha enviado a tu correo',
-                'pro favor revisalo',
+                'por favor revisalo',
                 'success'
             ) : null)
             .catch(error => console.error(error))
