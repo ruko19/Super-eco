@@ -19,7 +19,7 @@ const TipDayList = () => {
             Se reducen los niveles de estrés
             Se realiza actividad cardiovascular
             Se promueven las actividades grupales`,
-            "img": "../../../public/jake-melara-Yh6K2eTr_FY-unsplash.jpg"
+            "img": "https://res.cloudinary.com/dwvchf8al/image/upload/v1678830005/jake-melara-Yh6K2eTr_FY-unsplash_vtge58.jpg"
 
         },
         {
@@ -28,7 +28,7 @@ const TipDayList = () => {
             "description": `Consistirá en hacer una campaña para fomentar el reciclaje y se dotará a las aulas con
             contenedores de reciclaje. Se procederá a la realización de manualidades a partir de
             residuos.`,
-            "img": "../../../public/jas-min-CIItgnBEOgw-unsplash.jpg"
+            "img": "https://res.cloudinary.com/dwvchf8al/image/upload/v1678830005/jas-min-CIItgnBEOgw-unsplash_ho6ji5.jpg"
         },
         {
             "id": "3",
@@ -39,7 +39,7 @@ const TipDayList = () => {
             del reciclaje.
             Ampliar los conocimientos del entorno próximo. Es responsabilidad de nosotros, fomentar la educación
             de los niños ayudándoles a comprender el medio ambiente y realizando actividades entorno a el. `,
-            "img": "../../../public/ismail-salad-osman-hajji-dirir-lXvMlLRhOi8-unsplash.jpg"
+            "img": "https://res.cloudinary.com/dwvchf8al/image/upload/v1678830004/ismail-salad-osman-hajji-dirir-lXvMlLRhOi8-unsplash_qxo3p5.jpg    "
         }
     ]
 
