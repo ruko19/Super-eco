@@ -1,13 +1,13 @@
 import React from 'react'
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
-
+import IconLocation from './IconLocation'
 
 
 
 const Markers = ({ data }) => {
 
     const markers = data.map(u => (
-        <Marker position={u.ubication} key={u.id}>
+        <Marker position={u.ubication} key={u.id} icon={IconLocation}>
             <Popup>
                 <h1 className='text-3xl font-extrabold'>{u.name}</h1>
                 <img className='img1 w-full' src={u.img} alt="" />
