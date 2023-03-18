@@ -7,14 +7,25 @@ import { getDataSolicitud } from "../api/firebaseConfig";
 export const SolicitudContext = createContext()
 
 
-const SolicitudContext = ({ children }) => {
+export const SolicitudProvider = ({ children }) => {
+
+
+    const [solicitud, setSolicitud] = useState([])
+
+
+
+    const [nombreEmpresa, setNombreEmpresa] = useState("")
+    const [rut, setRut] = useState("")
+    const [correo, setCorreo] = useState("")
+    const [Contacto, setContacto] = useState("")
+    const [solicitudReg, setSolicitudReg] = useState("")
 
 
 
     const getSolicitud = async () => {
         try {
             const res = await getDataSolicitud();
-            setEventos(res)
+            setSolicitud(res)
 
         } catch (error) {
 
@@ -28,10 +39,23 @@ const SolicitudContext = ({ children }) => {
 
     }, [])
 
+    // Crear un nuevo registro
+
+    const RegistroEmpresa = async (newRegisterEMp) => {
+        await addDoc(collection(db, "solicitudes"), newRegisterEMp);
+        getSolicitud();
+    }
+
 
     return (
-        <div>SolicitudContex</div>
+        <SolicitudContext.Provider value={{
+            solicitud,
+            RegistroEmpresa
+        }}>
+            {children}
+
+        </SolicitudContext.Provider>
+
     )
 }
 
-export default SolicitudContext

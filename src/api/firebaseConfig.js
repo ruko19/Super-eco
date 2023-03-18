@@ -61,6 +61,7 @@ export const getDataBlogs = async () => {
 
 export const getDataSolicitud = async () => {
   const snapshot = await getDocs(collection(db, "solicitudes"));
+  const data = []
 
 
   snapshot.forEach((doc) => {
