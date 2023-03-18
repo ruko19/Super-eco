@@ -2,13 +2,13 @@ import { useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import { auth } from '../../api/firebaseConfig';
 import { signInWithEmailAndPassword, } from "firebase/auth"
-import useEventos from '../../hooks/useEventos';
+
 import { useState } from 'react';
 
 const LoginAdminComponent = () => {
-
+    const [isAdmin, setIsAdmin] = useState(false)
     const [error, setError] = useState("")
-    const { setIsAdmin } = useEventos();
+        ;
     const navigate = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm();
 

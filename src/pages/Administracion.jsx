@@ -1,6 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import BlogComponente from "../components/CrudBlog/BlogComponente";
-import EventosComponente from "../components/CrudEventos/EventosComponente"
 import useEventos from "../hooks/useEventos";
 import { signOut } from "firebase/auth"
 import { auth } from "../api/firebaseConfig";
@@ -28,8 +26,8 @@ const Administracion = () => {
                 <button className="className='mb-8 p-3 bg-gray-500 cursor-pointer outline-none text-white rounded-lg" onClick={handleLogout}>Salir del panel</button>
                 <p className="text-center text-4xl font-thin">Bienvenido <span className="font-semibold"></span></p>
                 <p className="text-center mt-4 mb-12 font-thin">Este es el panel administrativo en el cual puedes editar, eliminar o agregar un evento o blog nuevo.</p>
-                <EventosComponente />
-                <BlogComponente />
+
+
             </div>
         </div>
     )

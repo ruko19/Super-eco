@@ -59,23 +59,14 @@ export const getDataBlogs = async () => {
   return data;
 };
 
-// export const fetchEventos = () => async (dispatch) => {
-//   const snapshot = await getDocs(collection(db, "eventos"));
-//   const data = [];
+export const getDataSolicitud = async () => {
+  const snapshot = await getDocs(collection(db, "solicitudes"));
 
-//   snapshot.forEach((doc) => {
-//     const evento = doc.data();
-//     data.push({ ...evento });
-//   });
 
-//   dispatch(getEventos(data));
-// };
+  snapshot.forEach((doc) => {
+    const solicitud = doc.data();
+    data.push({ ...solicitud });
+  });
 
-// export const addData = () => async (dispatch) => {
-//   const snapshotAdd = await addDoc(doc(db, "eventos"))
-// }
-
-// export const addData = () => async (dispatch) => {
-//   await add(collection(db, { dispatch }))
-
-// }
+  return data
+}
