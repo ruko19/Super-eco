@@ -47,6 +47,11 @@ export const SolicitudProvider = ({ children }) => {
     }
 
 
+    const eliminarSolicitud = async (idEvento) => {
+        await deleteDoc(doc(db, "solicitudes", idEvento))
+    }
+
+
     return (
         <SolicitudContext.Provider value={{
             solicitud,

@@ -5,13 +5,16 @@ import { VscSettingsGear } from "react-icons/vsc";
 import { FaRecycle } from "react-icons/fa";
 import { SlPeople } from "react-icons/sl";
 import { Link, Outlet } from 'react-router-dom';
+import useSolicitud from '../../../hooks/useSolicitud';
 
 
 const Siderbar = () => {
+    const { solicitud } = useSolicitud()
+    const num = solicitud.length
 
     const menu = [
         { name: "Home", icon: <VscHome />, id: "1", link: "/administracion/dashboard" },
-        { name: "Solicitudes", icon: <VscFolderOpened />, id: "2", link: "/administracion/solicitudes" },
+        { name: `Solicitudes(${num})`, icon: <VscFolderOpened />, id: "2", link: "/administracion/solicitudes" },
         { name: "Recuperadores", icon: <FaRecycle />, id: "3", link: "/administracion/recuperadores" },
         { name: "Alianzas", icon: <SlPeople />, id: "4", link: "/administracion/alianzas" },
         { name: "Settings", icon: <VscSettingsGear />, id: "5" },
