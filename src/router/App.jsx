@@ -14,6 +14,8 @@ import BlogsPage from "../pages/BlogsPage"
 import RutaProtegida from "../utils/RutaProtegida"
 import BlogUnico from "../pages/BlogUnico"
 import IniciativaUnica from "../components/IniciativaUnica/IniciativaUnica"
+import RecuperadoresPage from "../pages/RecuperadoresPage"
+import EmpresasPage from "../pages/EmpresasPage"
 
 
 
@@ -35,6 +37,9 @@ function App() {
               <Route path="/ubicaciones" element={<Ubicaciones />} />
               <Route path="/administracion" element={<RutaProtegida><Administracion /></RutaProtegida>} />
               <Route path="/iniciativa/:id" element={<IniciativaUnica />} />
+
+              <Route path="/recuperadores" element={<RecuperadoresPage />} />
+              <Route path="/empresas" element={<EmpresasPage />} />
             </Routes>
           </Layout>
         </BrowserRouter>
