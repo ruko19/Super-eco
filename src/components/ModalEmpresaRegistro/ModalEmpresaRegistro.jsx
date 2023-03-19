@@ -38,7 +38,7 @@ const ModalEmpresaRegistro = ({ setModalAlianza }) => {
         correo,
         contacto,
         horario: [horario1, horario2],
-        ubicacion: [direccion, [coordenada1, coordenada2]]
+        ubicacion: [direccion, { coordenada1, coordenada2 }]
     };
 
     const handleSubmit = async (e) => {

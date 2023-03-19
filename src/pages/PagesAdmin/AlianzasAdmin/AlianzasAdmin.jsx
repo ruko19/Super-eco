@@ -42,8 +42,8 @@ const AlianzasAdmin = () => {
                                     <td className='border border-gray-500 text-lg px-4'>{ubicacion[0]}</td>
                                     <td className='border border-gray-500 text-lg px-4'>
                                         <ul>
-                                            <li><span>Lat= </span>{ubicacion[1]._lat}</li>
-                                            <li><span>long= </span>{ubicacion[1]._long}</li>
+                                            <li><span>Lat= </span>{ubicacion[1].coordenada1}</li>
+                                            <li><span>long= </span>{ubicacion[1].coordenada2}</li>
                                         </ul>
                                     </td>
 
