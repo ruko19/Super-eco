@@ -84,3 +84,17 @@ export const getDataRecuperadores = async () => {
 
   return data;
 };
+
+
+
+export const getDataAlianzas = async () => {
+  const snapshot = await getDocs(collection(db, "alianzas"));
+  const data = [];
+
+  snapshot.forEach((doc) => {
+    const alianzas = { ...doc.data(), id: doc.id };
+    data.push({ ...alianzas });
+  });
+
+  return data;
+};

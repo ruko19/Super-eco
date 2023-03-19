@@ -12,16 +12,6 @@ export const SolicitudProvider = ({ children }) => {
 
     const [solicitud, setSolicitud] = useState([])
 
-
-
-    const [nombreEmpresa, setNombreEmpresa] = useState("")
-    const [rut, setRut] = useState("")
-    const [correo, setCorreo] = useState("")
-    const [Contacto, setContacto] = useState("")
-    const [solicitudReg, setSolicitudReg] = useState("")
-
-
-
     const getSolicitud = async () => {
         try {
             const res = await getDataSolicitud();
