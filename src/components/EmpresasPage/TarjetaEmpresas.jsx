@@ -9,7 +9,7 @@ const TarjetaEmpresas = () => {
             </figure>
             <div className='bg-green-600 p-8 text-white text-left'>
                 <h3 className='text-3xl mb-8'>Empresas</h3>
-                <p className="font-light text-1xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                <p className="font-light text-1xl">Si estas interesado y deseas unirte a nuestra iniciativa, puedes solicitar mas informacion aqui </p>
                 <div className="bg-white max-w-max p-2 rounded-md text-green-600 flex gap-8 items-center mt-8">
                     <Link
                         className="text-1xl"
