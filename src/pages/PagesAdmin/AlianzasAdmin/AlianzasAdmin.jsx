@@ -5,10 +5,6 @@ import { useAlianzas } from '../../../hooks/useAlianzas';
 
 const AlianzasAdmin = () => {
     const { alianzas } = useAlianzas()
-    console.log(alianzas);
-    alianzas.map((i) => {
-        console.log(i.ubicacion[1]._lat);
-    })
 
     return (
         <div className='w-full h-screen p-12'>

@@ -32,11 +32,21 @@ export const AlianzasProvider = ({ children }) => {
         getAlianzas();
 
     }, [])
+
+
+
+    // crear un nuevo registro empresa
+
+    const createAlianza = async (newAlianza) => {
+        await addDoc(collection(db, "alianzas"), newAlianza);
+        getAlianzas();
+    }
     return (
 
         <AlianzasContext.Provider
             value={{
-                alianzas
+                alianzas,
+                createAlianza
             }}>
             {children}
         </AlianzasContext.Provider>
