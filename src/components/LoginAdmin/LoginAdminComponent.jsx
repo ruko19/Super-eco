@@ -19,7 +19,7 @@ const LoginAdminComponent = () => {
         setError("")
         try {
             await login(data.email, data.password)
-            navigate("/administracion")
+            navigate("/administracion/solicitudes")
             setIsAdmin(true)
         } catch (error) {
             setError(error.message)

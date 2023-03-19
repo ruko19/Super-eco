@@ -4,12 +4,32 @@ import { VscFolderOpened } from "react-icons/vsc";
 import { VscSettingsGear } from "react-icons/vsc";
 import { FaRecycle } from "react-icons/fa";
 import { SlPeople } from "react-icons/sl";
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import useSolicitud from '../../../hooks/useSolicitud';
 import useRecuperador from '../../../hooks/useRecuperador';
+import { BiLogOut } from "react-icons/bi";
+import { signOut } from 'firebase/auth';
+import { auth } from '../../../api/firebaseConfig';
 
 
 const Siderbar = () => {
+
+    const navigate = useNavigate()
+
+    function logout() {
+        return signOut(auth)
+    }
+
+    const handleLogout = async () => {
+        try {
+            await logout();
+            navigate("/")
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
+
     const { solicitud } = useSolicitud()
     const { recuperadores } = useRecuperador()
 
@@ -17,11 +37,11 @@ const Siderbar = () => {
     const numRecuperador = recuperadores.length
 
     const menu = [
-        { name: "Home", icon: <VscHome />, id: "1", link: "/administracion/dashboard" },
+
         { name: `Solicitudes(${num})`, icon: <VscFolderOpened />, id: "2", link: "/administracion/solicitudes" },
         { name: `Recuperadores(${numRecuperador})`, icon: <FaRecycle />, id: "3", link: "/administracion/recuperadores" },
         { name: "Alianzas", icon: <SlPeople />, id: "4", link: "/administracion/alianzas" },
-        { name: "Settings", icon: <VscSettingsGear />, id: "5" },
+
     ]
     return (
         <div className='flex'>
@@ -47,6 +67,13 @@ const Siderbar = () => {
                                 ))
                             }
                         </ul>
+                        <div className='mb-9 cursor-pointer text-3xl'>
+                            <button onClick={handleLogout} className='flex gap-9 items-center'>
+                                <div className='text-green-600'><BiLogOut /></div>
+                                <div className='text-green-600'>Logout</div>
+                            </button>
+
+                        </div>
 
                     </div>
                 </div>
