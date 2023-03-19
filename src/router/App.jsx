@@ -43,15 +43,9 @@ function App() {
               <Route path="/administracion/solicitudes" element={<SoliditudesAdminPages />} />
               <Route path="/administracion/recuperadores" element={<RecuperadoresAdmin />} />
               <Route path="/administracion/alianzas" element={<AlianzasAdmin />} />
-
             </Route>
-
-
           </Routes>
         </Layout>
-
-
-
       </BrowserRouter>
 
     </SolicitudProvider>
