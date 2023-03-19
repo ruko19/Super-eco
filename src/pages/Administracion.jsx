@@ -41,9 +41,6 @@ const Administracion = () => {
 
         <div className="w-full h-screen ">
             <Siderbar />
-
-
-
         </div>
 
 

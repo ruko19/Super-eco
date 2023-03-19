@@ -16,39 +16,38 @@ import HomeAdminPages from "../pages/PagesAdmin/HomeAdmin/HomeAdminPages"
 import SoliditudesAdminPages from "../pages/PagesAdmin/SoliditudesAdminPages/SoliditudesAdminPages"
 import RecuperadoresAdmin from "../pages/PagesAdmin/RecuperadoresAdmin/RecuperadoresAdmin"
 import AlianzasAdmin from "../pages/PagesAdmin/AlianzasAdmin/AlianzasAdmin"
+import { RecuperadoresProvider } from "../context/RecuperadoresContext"
 
 
 
 function App() {
   return (
-    <SolicitudProvider>
-      <BrowserRouter>
-        <Layout>
-          <Routes>
+    <RecuperadoresProvider>
+      <SolicitudProvider>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/quienes-somos" element={<QuienesSomos />} />
+              <Route path="/eventos" element={<Eventos />} />
+              <Route path="/blog" element={<BlogsPage />} />
+              <Route path="/Contacto" element={<Contacto />} />
+              <Route path="/login-admin" element={<LoginAdmin />} />
+              <Route path="/ubicaciones" element={<Ubicaciones />} />
+              <Route path="/recuperadores" element={<RecuperadoresPage />} />
+              <Route path="/empresas" element={<EmpresasPage />} />
+              <Route path="/administracion" element={<Administracion />}>
 
-            <Route path="/" element={<Home />} />
-            <Route path="/quienes-somos" element={<QuienesSomos />} />
-            <Route path="/eventos" element={<Eventos />} />
-            <Route path="/blog" element={<BlogsPage />} />
-            <Route path="/Contacto" element={<Contacto />} />
-            <Route path="/login-admin" element={<LoginAdmin />} />
-            <Route path="/ubicaciones" element={<Ubicaciones />} />
-            <Route path="/recuperadores" element={<RecuperadoresPage />} />
-            <Route path="/empresas" element={<EmpresasPage />} />
-
-
-            <Route path="/administracion" element={<Administracion />}>
-
-              <Route path="/administracion/dashboard" element={<HomeAdminPages />} />
-              <Route path="/administracion/solicitudes" element={<SoliditudesAdminPages />} />
-              <Route path="/administracion/recuperadores" element={<RecuperadoresAdmin />} />
-              <Route path="/administracion/alianzas" element={<AlianzasAdmin />} />
-            </Route>
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-
-    </SolicitudProvider>
+                <Route path="/administracion/dashboard" element={<HomeAdminPages />} />
+                <Route path="/administracion/solicitudes" element={<SoliditudesAdminPages />} />
+                <Route path="/administracion/recuperadores" element={<RecuperadoresAdmin />} />
+                <Route path="/administracion/alianzas" element={<AlianzasAdmin />} />
+              </Route>
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </SolicitudProvider>
+    </RecuperadoresProvider>
 
   )
 }
