@@ -59,12 +59,13 @@ export const getDataBlogs = async () => {
   return data;
 };
 
+////// obtener solicitudes a la base de datos
 export const getDataSolicitud = async () => {
   const snapshot = await getDocs(collection(db, "solicitudes"));
-  const data = []
+  const data = [];
 
   snapshot.forEach((doc) => {
-    const solicitud = doc.data();
+    const solicitud = { ...doc.data(), id: doc.id };
     data.push({ ...solicitud });
   });
 
@@ -77,8 +78,8 @@ export const getDataRecuperadores = async () => {
   const data = [];
 
   snapshot.forEach((doc) => {
-    const blog = doc.data();
-    data.push({ ...blog });
+    const recuperadores = { ...doc.data(), id: doc.id };
+    data.push({ ...recuperadores });
   });
 
   return data;

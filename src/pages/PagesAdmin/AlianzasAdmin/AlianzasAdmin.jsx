@@ -2,7 +2,7 @@ import React from 'react'
 
 const AlianzasAdmin = () => {
     return (
-        <div>AlianzasAdmin</div>
+        <div className='p-12'>AlianzasAdmin</div>
     )
 }
 

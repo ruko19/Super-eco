@@ -28,7 +28,7 @@ export const SolicitudProvider = ({ children }) => {
             setSolicitud(res)
 
         } catch (error) {
-
+            console.log(error)
         }
     }
 
@@ -46,16 +46,18 @@ export const SolicitudProvider = ({ children }) => {
         getSolicitud();
     }
 
-
-    const eliminarSolicitud = async (idEvento) => {
-        await deleteDoc(doc(db, "solicitudes", idEvento))
+    // elimiar un nuevo registro
+    const eliminarSolicitud = async (id) => {
+        await deleteDoc(doc(db, "solicitudes", id))
     }
 
 
     return (
         <SolicitudContext.Provider value={{
             solicitud,
-            RegistroEmpresa
+            RegistroEmpresa,
+            eliminarSolicitud,
+            getSolicitud
         }}>
             {children}
 

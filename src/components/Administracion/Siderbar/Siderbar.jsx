@@ -6,16 +6,20 @@ import { FaRecycle } from "react-icons/fa";
 import { SlPeople } from "react-icons/sl";
 import { Link, Outlet } from 'react-router-dom';
 import useSolicitud from '../../../hooks/useSolicitud';
+import useRecuperador from '../../../hooks/useRecuperador';
 
 
 const Siderbar = () => {
     const { solicitud } = useSolicitud()
+    const { recuperadores } = useRecuperador()
+
     const num = solicitud.length
+    const numRecuperador = recuperadores.length
 
     const menu = [
         { name: "Home", icon: <VscHome />, id: "1", link: "/administracion/dashboard" },
         { name: `Solicitudes(${num})`, icon: <VscFolderOpened />, id: "2", link: "/administracion/solicitudes" },
-        { name: "Recuperadores", icon: <FaRecycle />, id: "3", link: "/administracion/recuperadores" },
+        { name: `Recuperadores(${numRecuperador})`, icon: <FaRecycle />, id: "3", link: "/administracion/recuperadores" },
         { name: "Alianzas", icon: <SlPeople />, id: "4", link: "/administracion/alianzas" },
         { name: "Settings", icon: <VscSettingsGear />, id: "5" },
     ]
@@ -31,7 +35,7 @@ const Siderbar = () => {
                             {
                                 menu.map((i) => (
 
-                                    <li className='mb-9 cursor-pointer text-4xl' key={i.id}>
+                                    <li className='mb-9 cursor-pointer text-3xl' key={i.id}>
                                         <Link to={i.link}>
                                             <div className='flex gap-9 items-center'>
                                                 <div className='text-green-600'>{i.icon}</div>
