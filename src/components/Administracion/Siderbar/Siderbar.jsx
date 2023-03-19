@@ -10,6 +10,7 @@ import useRecuperador from '../../../hooks/useRecuperador';
 import { BiLogOut } from "react-icons/bi";
 import { signOut } from 'firebase/auth';
 import { auth } from '../../../api/firebaseConfig';
+import { useAlianzas } from '../../../hooks/useAlianzas';
 
 
 const Siderbar = () => {
@@ -31,16 +32,18 @@ const Siderbar = () => {
 
 
     const { solicitud } = useSolicitud()
-    const { recuperadores } = useRecuperador()
+    const { recuperadores } = useRecuperador();
+    const { alianzas } = useAlianzas()
 
     const num = solicitud.length
     const numRecuperador = recuperadores.length
+    const numAlianzas = alianzas.length
 
     const menu = [
 
         { name: `Solicitudes(${num})`, icon: <VscFolderOpened />, id: "2", link: "/administracion/solicitudes" },
         { name: `Recuperadores(${numRecuperador})`, icon: <FaRecycle />, id: "3", link: "/administracion/recuperadores" },
-        { name: "Alianzas", icon: <SlPeople />, id: "4", link: "/administracion/alianzas" },
+        { name: `Alianzas(${numAlianzas})`, icon: <SlPeople />, id: "4", link: "/administracion/alianzas" },
 
     ]
     return (
