@@ -3,12 +3,14 @@ import { BiSelectMultiple } from 'react-icons/bi';
 import { MdDeleteOutline } from 'react-icons/md';
 import Swal from 'sweetalert2';
 import { useAlianzas } from '../../../hooks/useAlianzas'
+import useRecuperador from '../../../hooks/useRecuperador';
 
 const EmpresasRecuperador = () => {
 
     const [trabajoTomado, setTrabajoTomado] = useState(false);
 
     const { alianzas } = useAlianzas();
+    const { puntos, setPuntos } = useRecuperador()
 
     const handleTomarTrabajo = (name) => {
         Swal.fire(
@@ -16,6 +18,7 @@ const EmpresasRecuperador = () => {
             "<p></p>",
             'info'
         )
+        setPuntos(puntos + 10)
         setTrabajoTomado(true)
     }
 
@@ -50,8 +53,11 @@ const EmpresasRecuperador = () => {
                                 { }
                                 <td className='border border-gray-500 p-6'>
                                     <div>
-                                        <BiSelectMultiple onClick={() => handleTomarTrabajo(name)} className='cursor-pointer text-5xl text-green-500' />
+
+                                        <BiSelectMultiple onClick={handleTomarTrabajo} className='cursor-pointer text-5xl text-green-500' />
                                         <p>toma este trabajo</p>
+
+
                                     </div>
                                 </td>
                             </tr>

@@ -8,7 +8,9 @@ export const RecuperadoresContext = createContext();
 export const RecuperadoresProvider = ({ children }) => {
 
     const [recuperadores, setRecuperadores] = useState([]);
-    const [logueado, setLogeado] = useState(false)
+    const [logueado, setLogeado] = useState(false);
+
+    const [puntos, setPuntos] = useState(0);
 
     ////// obtener recuperdor
     const getRecuperadores = async () => {
@@ -37,7 +39,7 @@ export const RecuperadoresProvider = ({ children }) => {
     }
 
     return (
-        <RecuperadoresContext.Provider value={{ addRecuperador, recuperadores, getRecuperadores, eliminarRecuperador, logueado, setLogeado }}>
+        <RecuperadoresContext.Provider value={{ puntos, setPuntos, addRecuperador, recuperadores, getRecuperadores, eliminarRecuperador, logueado, setLogeado }}>
             {children}
         </RecuperadoresContext.Provider>
     )
