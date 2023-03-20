@@ -10,14 +10,13 @@ const EmpresasRecuperador = () => {
 
     const { alianzas } = useAlianzas();
 
-    const handleTomarTrabajo = () => {
-
+    const handleTomarTrabajo = (name) => {
         Swal.fire(
-            'Super has tomado este trabajo',
+            `Super has tomado este trabajo de la empresa ${name}`,
             "<p></p>",
-
             'info'
         )
+        setTrabajoTomado(true)
     }
 
 
@@ -36,7 +35,7 @@ const EmpresasRecuperador = () => {
                 <tbody className=''>
                     {
                         alianzas.map(({ name, rut, correo, contacto, id, ubicacion, horario }) => (
-                            <tr className='bg-yellow-200 ' key={rut}>
+                            <tr className="bg-yellow-200 " key={rut}>
                                 <td className='border border-gray-500 text-lg px-4'>{name}</td>
 
                                 <td className='border border-gray-500 text-lg px-4'>{contacto}</td>
@@ -49,13 +48,10 @@ const EmpresasRecuperador = () => {
 
                                 <td className='border border-gray-500 text-lg px-4'>{ubicacion[0]}</td>
                                 { }
-                                <td onClick={() => { handleDelete(id) }} className='border border-gray-500 p-6'>
+                                <td className='border border-gray-500 p-6'>
                                     <div>
-
-                                        <BiSelectMultiple onClick={handleTomarTrabajo} className='cursor-pointer text-5xl text-green-500' />
+                                        <BiSelectMultiple onClick={() => handleTomarTrabajo(name)} className='cursor-pointer text-5xl text-green-500' />
                                         <p>toma este trabajo</p>
-
-
                                     </div>
                                 </td>
                             </tr>
