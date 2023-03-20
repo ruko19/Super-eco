@@ -47,7 +47,7 @@ const Siderbar = () => {
 
     ]
     return (
-        <div className='flex'>
+        <div className='flex flex-col md:flex-row'>
             <div className='h-screen border-r border bg-gray-200 w-96 px-9'>
                 <div>
                     <img className='' src={"https://res.cloudinary.com/dwvchf8al/image/upload/v1678477409/Demo_day_RROP/logo-super-eco_rxt0ic.png"} alt="" />
@@ -66,9 +66,9 @@ const Siderbar = () => {
                                             </div>
                                         </Link>
                                     </li>
-
                                 ))
                             }
+
                         </ul>
                         <div className='mb-9 cursor-pointer text-3xl'>
                             <button onClick={handleLogout} className='flex gap-9 items-center'>
