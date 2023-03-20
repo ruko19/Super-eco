@@ -17,7 +17,7 @@ const AlianzasAdmin = () => {
         <div className='w-full h-screen p-12'>
             <div className=''>
                 <h2 className='text-6xl font-medium mb-10'>Alianzas</h2>
-                <table className='w-full'>
+                <table className=' table-auto'>
                     <thead>
                         <tr className='text-3xl'>
                             <td>Nombre de la Empresa</td>

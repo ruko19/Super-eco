@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { BiSelectMultiple } from 'react-icons/bi';
 import { MdDeleteOutline } from 'react-icons/md';
+import Swal from 'sweetalert2';
 import { useAlianzas } from '../../../hooks/useAlianzas'
 
 const EmpresasRecuperador = () => {
 
+    const [trabajoTomado, setTrabajoTomado] = useState(false);
+
     const { alianzas } = useAlianzas();
+
+    const handleTomarTrabajo = () => {
+
+        Swal.fire(
+            'Super has tomado este trabajo',
+            "<p></p>",
+
+            'info'
+        )
+    }
+
+
     return (
         <div className='w-full h-screen p-12'>
             <table className='w-full'>
@@ -32,8 +48,16 @@ const EmpresasRecuperador = () => {
                                 </td>
 
                                 <td className='border border-gray-500 text-lg px-4'>{ubicacion[0]}</td>
+                                { }
+                                <td onClick={() => { handleDelete(id) }} className='border border-gray-500 p-6'>
+                                    <div>
 
-                                <td onClick={() => { handleDelete(id) }} className='border border-gray-500 p-6'><MdDeleteOutline className='cursor-pointer text-5xl text-red-500' /></td>
+                                        <BiSelectMultiple onClick={handleTomarTrabajo} className='cursor-pointer text-5xl text-green-500' />
+                                        <p>toma este trabajo</p>
+
+
+                                    </div>
+                                </td>
                             </tr>
 
                         ))
