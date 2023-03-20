@@ -23,7 +23,7 @@ const SoliditudesAdminPages = () => {
                 <div className='flex justify-between items-center'>
                     <div className='mb-10'>
                         <h2 className='text-6xl font-medium'>Solicitudes</h2>
-                        <p className='font-light'>En caso de llegar a un acuerdo de una alianza con la empresa por favor registra la empresa</p>
+                        <p className='font-light'>En caso de llegar a un acuerdo de una alianza <br /> con la empresa por favor registra la empresa y sino por favor elimina la solicitud.</p>
                     </div>
                     <button onClick={mostrarModal} className='bg-green-600 py-2 px-6 text-white'>Registrar empresas</button>
                 </div>

@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
             }
             {children}
 
-            <Footer />
+            {
+                location.pathname.startsWith("/administracion") ? null : <Footer />
+            }
         </div>
     )
 }

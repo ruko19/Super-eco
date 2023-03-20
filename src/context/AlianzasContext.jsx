@@ -41,12 +41,21 @@ export const AlianzasProvider = ({ children }) => {
         await addDoc(collection(db, "alianzas"), newAlianza);
         getAlianzas();
     }
+
+
+    // elimiar un nuevo registro
+    const eliminarAlianza = async (id) => {
+        await deleteDoc(doc(db, "alianzas", id))
+    }
+
     return (
 
         <AlianzasContext.Provider
             value={{
                 alianzas,
-                createAlianza
+                createAlianza,
+                getAlianzas,
+                eliminarAlianza
             }}>
             {children}
         </AlianzasContext.Provider>

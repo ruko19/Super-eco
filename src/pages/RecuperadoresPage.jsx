@@ -6,12 +6,10 @@ import { useNavigate } from "react-router-dom"
 import useRecuperador from "../hooks/useRecuperador"
 import Swal from 'sweetalert2'
 
-
 const RecuperadoresPage = () => {
 
     const navigate = useNavigate();
     const { addRecuperador } = useRecuperador();
-
     const [registro, setRegistro] = useState(false);
 
     const [nombre, setNombre] = useState("");
@@ -21,7 +19,7 @@ const RecuperadoresPage = () => {
     const [celular, setCelular] = useState("");
 
     const [error, setError] = useState("");
-    const [legueado, setLogeado] = useState(false)
+
 
     const datosRecuperador = {
         nombre,
@@ -47,8 +45,7 @@ const RecuperadoresPage = () => {
             }
             else {
                 await signInWithEmailAndPassword(auth, correo, password)
-                setLogeado(true)
-                setMensaje(false)
+                navigate("/recuperador/ubicaciones")
             }
             setNombre("")
             setCedula("")
@@ -61,21 +58,21 @@ const RecuperadoresPage = () => {
     }
 
     return (
-      <div className="container">
-        <h2 className="text-6xl font-bold mb-11">
-          Beneficios y <span className="text-green-600">¿cómo ser parte?</span>
-        </h2>
-        <p className="font-light w-[992px]">
-          Super Eco te ofrece la facilidad de lograr acuerdos con las empresas
-          que hacen parte de nuestra iniciativa , para que tengas mejores
-          condiciones y facilidad a la hora de obtener los residuos reciclables
-          , contamos con diferentes contenedores a lo largo de toda el área
-          metropolitana , ademas de brindarte esta facilidad , también te
-          brindamos incentivos en conjunto con las empresas que hacen parte de
-          nuestro proyecto , para inscribirte con nosotros , completa y envia el
-          siguiente formulario con todos tus datos y nuestros asesores se
-          pondrán en contacto contigo.{" "}
-        </p>
+        <div className="container">
+            <h2 className="text-6xl font-bold mb-11">
+                Beneficios y <span className="text-green-600">¿cómo ser parte?</span>
+            </h2>
+            <p className="font-light w-[992px]">
+                Super Eco te ofrece la facilidad de lograr acuerdos con las empresas
+                que hacen parte de nuestra iniciativa , para que tengas mejores
+                condiciones y facilidad a la hora de obtener los residuos reciclables
+                , contamos con diferentes contenedores a lo largo de toda el área
+                metropolitana , ademas de brindarte esta facilidad , también te
+                brindamos incentivos en conjunto con las empresas que hacen parte de
+                nuestro proyecto , para inscribirte con nosotros , completa y envia el
+                siguiente formulario con todos tus datos y nuestros asesores se
+                pondrán en contacto contigo.{" "}
+            </p>
 
             <div className="md:flex justify-between items-center mt-36">
                 <form onSubmit={handleSubmit} id='formInit' className=' mt-8 flex flex-col border p-10 rounded-lg w-1/2 shadow-md' action="">

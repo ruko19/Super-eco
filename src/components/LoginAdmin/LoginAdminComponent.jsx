@@ -4,13 +4,15 @@ import { auth } from '../../api/firebaseConfig';
 import { signInWithEmailAndPassword, } from "firebase/auth"
 
 import { useState } from 'react';
+import useRecuperador from '../../hooks/useRecuperador';
 
 const LoginAdminComponent = () => {
     const [isAdmin, setIsAdmin] = useState(false)
-    const [error, setError] = useState("")
-        ;
+    const [error, setError] = useState("");
     const navigate = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm();
+
+    const { logueado, setLogeado } = useRecuperador()
 
     function login(email, password) {
         return signInWithEmailAndPassword(auth, email, password)
@@ -20,7 +22,7 @@ const LoginAdminComponent = () => {
         try {
             await login(data.email, data.password)
             navigate("/administracion/solicitudes")
-            setIsAdmin(true)
+            setLogeado(true)
         } catch (error) {
             setError(error.message)
         }

@@ -4,7 +4,14 @@ import { useAlianzas } from '../../../hooks/useAlianzas';
 
 
 const AlianzasAdmin = () => {
-    const { alianzas } = useAlianzas()
+    const { alianzas, getAlianzas, eliminarAlianza } = useAlianzas()
+
+
+    const handleDelete = async (id) => {
+        await eliminarAlianza(id)
+        getAlianzas();
+    }
+
 
     return (
         <div className='w-full h-screen p-12'>
@@ -23,8 +30,6 @@ const AlianzasAdmin = () => {
                         </tr>
                     </thead>
                     <tbody className=''>
-
-
                         {
                             alianzas.map(({ name, rut, correo, contacto, id, ubicacion, horario }) => (
                                 <tr className='bg-yellow-200 ' key={rut}>
@@ -46,12 +51,6 @@ const AlianzasAdmin = () => {
                                             <li><span>long= </span>{ubicacion[1].coordenada2}</li>
                                         </ul>
                                     </td>
-
-
-
-
-
-
                                     <td onClick={() => { handleDelete(id) }} className='border border-gray-500 p-6'><MdDeleteOutline className='cursor-pointer text-5xl text-red-500' /></td>
                                 </tr>
 
