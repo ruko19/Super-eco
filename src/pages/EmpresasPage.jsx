@@ -50,20 +50,20 @@ const EmpresasPage = () => {
 
 
     return (
-      <div className="container">
-        <h2 className="text-6xl font-bold mb-11">
-          Registrate <span className="text-green-600">como empresa</span>
-        </h2>
-        <p className="font-light w-[992px]">
-          Super Eco te ofrece la conexión con una persona encargada de tus
-          residuos, la cual te ayudara a simplificar tu proceso en el manejo y
-          control del reciclaje , así también te ayudaremos cumplir con toda la
-          normatividad que tu empresa debe cumplir según las leyes de nuestro
-          país , no solo contribuyendo con el planeta , sino tambien aportando a
-          la economia del pais y así mejorando las condiciones de las personas
-          encargadas, Completa el siguiente formulario y nuestros asesores se
-          pondrán en contacto contigo.
-        </p>
+        <div className="container">
+            <h2 className="text-6xl font-bold mb-11">
+                Registrate <span className="text-green-600">como empresa</span>
+            </h2>
+            <p className="font-light md:w-[992px]">
+                Super Eco te ofrece la conexión con una persona encargada de tus
+                residuos, la cual te ayudara a simplificar tu proceso en el manejo y
+                control del reciclaje , así también te ayudaremos cumplir con toda la
+                normatividad que tu empresa debe cumplir según las leyes de nuestro
+                país , no solo contribuyendo con el planeta , sino tambien aportando a
+                la economia del pais y así mejorando las condiciones de las personas
+                encargadas, Completa el siguiente formulario y nuestros asesores se
+                pondrán en contacto contigo.
+            </p>
 
             <div className="md:grid grid-cols-2 gap-8 items-center mt-36">
                 <form onSubmit={handleSubmit} id='formInit' className='flex flex-col border p-10 rounded-lg shadow-md' action="">

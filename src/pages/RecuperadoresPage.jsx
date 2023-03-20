@@ -62,7 +62,7 @@ const RecuperadoresPage = () => {
             <h2 className="text-6xl font-bold mb-11">
                 Beneficios y <span className="text-green-600">¿cómo ser parte?</span>
             </h2>
-            <p className="font-light w-[992px]">
+            <p className="font-light md:w-[992px]">
                 Super Eco te ofrece la facilidad de lograr acuerdos con las empresas
                 que hacen parte de nuestra iniciativa , para que tengas mejores
                 condiciones y facilidad a la hora de obtener los residuos reciclables
@@ -75,7 +75,7 @@ const RecuperadoresPage = () => {
             </p>
 
             <div className="md:flex justify-between items-center mt-36">
-                <form onSubmit={handleSubmit} id='formInit' className=' mt-8 flex flex-col border p-10 rounded-lg w-1/2 shadow-md' action="">
+                <form onSubmit={handleSubmit} id='formInit' className=' mt-8 flex flex-col border p-10 rounded-lg md:w-1/2 shadow-md' action="">
                     {error && <p>{error}</p>}
                     <legend className="font-bold text-5xl">{registro ? 'Registrate' : 'Inicia sesión'}</legend>
                     {registro ? < input onChange={e => setNombre(e.target.value)} value={nombre} name='Nombre_completo' className='border mt-9 p-6 rounded-2xl outline-none' type="text" placeholder='Nombre completo' /> : null}
@@ -95,7 +95,7 @@ const RecuperadoresPage = () => {
                     </button>
 
                 </form>
-                <div className="w-1/2">
+                <div className="md:w-1/2">
                     <img src={mascotaImg} alt="mascota supereco" className="w-[450px] mx-auto" />
                 </div>
             </div>
