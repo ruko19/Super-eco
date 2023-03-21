@@ -1,11 +1,20 @@
+import { useEffect } from "react"
 import Swal from "sweetalert2"
 import useRecuperador from "../../../hooks/useRecuperador"
 
 
 const BonosRecuperador = () => {
 
-
     const { puntos, setPuntos } = useRecuperador()
+
+    const puntosObtener = JSON.parse(localStorage.getItem('puntos'))
+    if (puntosObtener) {
+        setPuntos(puntosObtener)
+    }
+
+    useEffect(() => {
+        localStorage.setItem('puntos', JSON.stringify(puntos));
+    }, [puntos])
 
     const premios = [
         {
@@ -36,12 +45,11 @@ const BonosRecuperador = () => {
         if (puntos === 0) {
             return;
         } else {
-
             setPuntos(puntos - puntosid)
         }
 
-
     }
+
     return (
 
         <div className="p-12">
@@ -74,10 +82,6 @@ const BonosRecuperador = () => {
                         </div>
                     ))
                 }
-
-
-
-
             </div>
         </div>
     )
