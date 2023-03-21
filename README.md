@@ -26,7 +26,7 @@
   <p>Puedes ver actualimente el sitio web en este <a href="https://rrpo-app-demo-day-supereco.vercel.app/" target="_blank">enlace.</a></br></br>
  </p>
 
- <h2 id="tech-stack">Tecnologías</h2>
+ <h2 id="tecnologias">Tecnologías</h2>
 
  <ul>
   <li><strong>Desarrollo Front-end:</strong> Javascript, React js, React Router Dom, Useform, React-icons, React-leaflet, Cloudinary</li>
