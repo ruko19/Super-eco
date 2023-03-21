@@ -34,7 +34,7 @@ const RecuperadorUnico = () => {
     }
 
     return (
-        <div className='flex container'>
+        <div className='flex flex-col md:flex-row container'>
             <div className='h-screen border-r border bg-gray-200 w-96 px-9'>
                 <div>
                     <img className='' src={"https://res.cloudinary.com/dwvchf8al/image/upload/v1678477409/Demo_day_RROP/logo-super-eco_rxt0ic.png"} alt="" />
