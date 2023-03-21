@@ -16,38 +16,38 @@ const RecuperadoresAdmin = () => {
             <div className=' bg-white'>
                 <h2 className='text-6xl font-medium mb-10'>Recuperadores</h2>
 
-                <table className='w-full'>
-                    <thead>
-                        <tr className='text-4xl'>
-                            <td>Nombre</td>
-                            <td>Cédula</td>
-                            <td>Correo</td>
-                            <td>Celular</td>
+                <div className="container">
+                    <table className="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
+                        <thead>
+                            {
+                                recuperadores.map(({ cedula, celular, correo, nombre, id }) => (
+                                    <tr className="bg-green-600 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0 text-white" key={id}>
+                                        <th className="p-3 text-left">Nombre</th>
+                                        <th className="p-3 text-left">Cédula</th>
+                                        <th className="p-3 text-left">Correo</th>
+                                        <th className="p-3 text-left">Celular</th>
+                                        <th className="p-3 text-left" >Eliminar</th>
+                                    </tr>
+                                ))
+                            }
+                        </thead>
+                        <tbody className='flex-1 sm:flex-none'>
+                            {
+                                recuperadores.map(({ cedula, celular, correo, nombre, id }) => (
+                                    <tr className='flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0' key={id}>
+                                        <td className='border-grey-light border hover:bg-gray-100 p-3'>{nombre}</td>
+                                        <td className='border-grey-light border hover:bg-gray-100 p-3'>{cedula}</td>
+                                        <td className='border-grey-light border hover:bg-gray-100 p-3'>{correo}</td>
+                                        <td className='border-grey-light border hover:bg-gray-100 p-3'>{celular}</td>
+                                        <td onClick={() => { handleDelete(id) }} className='border-grey-light border hover:bg-gray-100 p-3'><MdDeleteOutline className='cursor-pointer text-5xl text-red-500' /></td>
 
-                        </tr>
-                    </thead>
-                    <tbody className='p-'>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
 
-
-                        {
-                            recuperadores.map(({ cedula, celular, correo, nombre, id }) => (
-                                <tr className='bg-yellow-200 ' key={id}>
-                                    <td className='border border-gray-500 p-6'>{nombre}</td>
-                                    <td className='border border-gray-500 p-6'>{cedula}</td>
-                                    <td className='border border-gray-500 p-6'>{correo}</td>
-                                    <td className='border border-gray-500 p-6'>{celular}</td>
-                                    <td onClick={() => { handleDelete(id) }} className='border border-gray-500 p-6'><MdDeleteOutline className='cursor-pointer text-5xl text-red-500' /></td>
-                                </tr>
-
-                            ))
-
-                        }
-
-
-
-                    </tbody>
-                </table>
-
+                </div>
             </div>
 
 

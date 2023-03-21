@@ -48,13 +48,14 @@ const Siderbar = () => {
     ]
     return (
         <div className='flex flex-col md:flex-row'>
-            <div className='h-screen border-r border bg-gray-200 w-96 px-9'>
+            <div className='md:h-screen p-12 md:p-8 border-r border bg-gray-200 md:w-96 px-9'>
                 <div>
-                    <img className='' src={"https://res.cloudinary.com/dwvchf8al/image/upload/v1678477409/Demo_day_RROP/logo-super-eco_rxt0ic.png"} alt="" />
-                    <div>
-                        <h3 className='mb-10'>Menu</h3>
-                        <ul>
+                    <img className='hidden md:block' src={"https://res.cloudinary.com/dwvchf8al/image/upload/v1678477409/Demo_day_RROP/logo-super-eco_rxt0ic.png"} alt="" />
 
+                    <div className='flex md:block items-center justify-between'>
+                        <h3 className='mb-10 hidden md:block'>Menu</h3>
+
+                        <nav className=''>
                             {
                                 menu.map((i) => (
 
@@ -69,14 +70,21 @@ const Siderbar = () => {
                                 ))
                             }
 
-                        </ul>
-                        <div className='mb-9 cursor-pointer text-3xl'>
-                            <button onClick={handleLogout} className='flex gap-9 items-center'>
-                                <div className='text-green-600'><BiLogOut /></div>
-                                <div className='text-green-600'>Logout</div>
-                            </button>
 
+                            <div className='mb-9 cursor-pointer text-3xl'>
+                                <button onClick={handleLogout} className='flex gap-9 items-center'>
+                                    <div className='text-green-600'><BiLogOut /></div>
+                                    <div className='text-green-600'>Logout</div>
+                                </button>
+
+                            </div>
+
+                        </nav>
+
+                        <div>
+                            <img className='md:hidden' src={"https://res.cloudinary.com/dwvchf8al/image/upload/v1678477409/Demo_day_RROP/logo-super-eco_rxt0ic.png"} alt="" width="300" />
                         </div>
+
 
                     </div>
                 </div>

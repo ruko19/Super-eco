@@ -30,7 +30,7 @@ const LoginAdminComponent = () => {
 
     return (
         <>
-            <form className='flex flex-col w-1/2 mx-auto' onSubmit={handleSubmit(onSubmit)}>
+            <form className='flex flex-col md:w-1/2 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 {error && <p>{error}</p>}
                 {errors.email && <span className='bg-red-700 p-5 rounded-lg text-center text-white mb-5'>El campo correo es requerido</span>}
                 <input className='p-6 border border-gray-300 outline-none text-gray-600 rounded-lg mb-8' type="email" {...register("email", {

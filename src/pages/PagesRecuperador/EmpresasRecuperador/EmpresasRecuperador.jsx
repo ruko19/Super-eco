@@ -25,51 +25,52 @@ const EmpresasRecuperador = () => {
 
     return (
         <div className='w-full h-screen p-12'>
-            <table className='w-full'>
-                <thead>
-                    <tr className='text-3xl'>
-                        <td>Nombre de la Empresa</td>
-                        <td>Contacto</td>
-                        <td>Horaio</td>
-                        <td>Ubicacion</td>
+            <div className="container">
+                <table className='w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5'>
+                    <thead>
+                        {
+                            alianzas.map(({ name, rut, correo, contacto, id, ubicacion, horario }) => (
+                                <tr className="bg-green-600 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0 text-xl text-white" key={rut}>
+                                    <th className="p-3 text-left">Nombre de la Empresa</th>
+                                    <th className="p-3 text-left">Contacto</th>
+                                    <th className="p-3 text-left">Horaio</th>
+                                    <th className="p-3 text-left">Ubicacion</th>
+                                    <th className="p-3 text-left">Tomar trabajo</th>
+                                </tr>
+                            ))
+                        }
+                    </thead>
+                    <tbody className=''>
 
-                    </tr>
-                </thead>
-                <tbody className=''>
-                    {
-                        alianzas.map(({ name, rut, correo, contacto, id, ubicacion, horario }) => (
-                            <tr className="bg-yellow-200 " key={rut}>
-                                <td className='border border-gray-500 text-lg px-4'>{name}</td>
+                        {
+                            alianzas.map(({ name, rut, correo, contacto, id, ubicacion, horario }) => (
+                                <tr className='flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0 text-xl' key={rut}>
+                                    <td className='border-grey-light border hover:bg-gray-100 p-3'>{name}</td>
+                                    <td className='border-grey-light border hover:bg-gray-100 p-2 md:p-3'>{contacto}</td>
+                                    <td className='border-grey-light border hover:bg-gray-100 md:p-2'>
+                                        <ul>
+                                            <li>{horario[0]}</li>
+                                            <li>{horario[1]}</li>
+                                        </ul>
+                                    </td>
+                                    <td className='border-grey-light border hover:bg-gray-100 p-2'>{ubicacion[0]}</td>
+                                    { }
+                                    <td className='border-grey-light border hover:bg-gray-100 md:p-2'>
+                                        <div>
 
-                                <td className='border border-gray-500 text-lg px-4'>{contacto}</td>
-                                <td className='border border-gray-500 text-lg px-4'>
-                                    <ul>
-                                        <li>{horario[0]}</li>
-                                        <li>{horario[1]}</li>
-                                    </ul>
-                                </td>
-
-                                <td className='border border-gray-500 text-lg px-4'>{ubicacion[0]}</td>
-                                { }
-                                <td className='border border-gray-500 p-6'>
-                                    <div>
-
-                                        <BiSelectMultiple onClick={handleTomarTrabajo} className='cursor-pointer text-5xl text-green-500' />
-                                        <p>toma este trabajo</p>
-
-
-                                    </div>
-                                </td>
-                            </tr>
-
-                        ))
-
-                    }
+                                            <BiSelectMultiple onClick={() => handleTomarTrabajo(name)} className='cursor-pointer text-4xl text-green-500' />
+                                            <p>toma este trabajo</p>
 
 
+                                        </div>
+                                    </td>
 
-                </tbody>
-            </table>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }
