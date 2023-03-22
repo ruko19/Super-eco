@@ -24,10 +24,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={"/recuperadores"}>Recuperadores</Link>
+                        <Link className="mr-4 hover:underline md:mr-6" to={"/recuperadores"}>Recuperadores</Link>
                     </li>
                     <li>
-                        <Link to={"/empresas"}>Solicita aquí tu alianza</Link>
+                        <Link className="mr-4 hover:underline md:mr-6" to={"/empresas"}>Solicita aquí tu alianza</Link>
                     </li>
                 </ul>
             </div>
