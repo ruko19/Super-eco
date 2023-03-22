@@ -24,10 +24,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <NavLink to={"/recuperadores"}>Recuperadores</NavLink>
+                        <Link to={"/recuperadores"}>Recuperadores</Link>
                     </li>
                     <li>
-                        <NavLink to={"/empresas"}>Solicita aquí tu alianza</NavLink>
+                        <Link to={"/empresas"}>Solicita aquí tu alianza</Link>
                     </li>
                 </ul>
             </div>
