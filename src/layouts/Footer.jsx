@@ -20,7 +20,7 @@ const Footer = () => {
                     </li>
                     <li>
                         <Link to="/quienes-somos" className="mr-4 hover:underline md:mr-6">
-                            Quienes somos
+                            Nosotros
                         </Link>
                     </li>
                     <li>

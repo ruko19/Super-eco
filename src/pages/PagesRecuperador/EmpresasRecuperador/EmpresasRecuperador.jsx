@@ -15,7 +15,7 @@ const EmpresasRecuperador = () => {
     const handleTomarTrabajo = (name) => {
         Swal.fire(
             `Super has tomado este trabajo de la empresa ${name}`,
-            "<p></p>",
+            "<p>Por favor acercate a nuestras oficinas en la ubicación que se encuentra en el mapa</p>",
             'info'
         )
         setPuntos(puntos + 10)

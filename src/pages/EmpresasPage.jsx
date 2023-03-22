@@ -60,7 +60,7 @@ const EmpresasPage = () => {
                 control del reciclaje , así también te ayudaremos cumplir con toda la
                 normatividad que tu empresa debe cumplir según las leyes de nuestro
                 país , no solo contribuyendo con el planeta , sino tambien aportando a
-                la economia del pais y así mejorando las condiciones de las personas
+                la economía del país y así mejorando las condiciones de las personas
                 encargadas, Completa el siguiente formulario y nuestros asesores se
                 pondrán en contacto contigo.
             </p>
