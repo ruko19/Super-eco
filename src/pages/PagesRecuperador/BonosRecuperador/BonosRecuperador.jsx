@@ -18,15 +18,21 @@ const BonosRecuperador = () => {
 
     const premios = [
         {
-            nombre: " Iphone 13",
-            puntosid: "15",
-            img: "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_300/v1679340984/iphone-7477151_1280_urxpoc.jpg"
+            nombre: " Huawei ",
+            puntosid: "45",
+            img: "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_200,w_300/v1679342121/honor-2631271_1280_pdmqwv.jpg"
         },
         {
             nombre: " Mercado",
             puntosid: "35",
             img: "https://res.cloudinary.com/dwvchf8al/image/upload/v1679447350/Demo_day_RROP/1_mercado_nsah8g.png"
-        }
+        },
+        {
+            nombre: "Cubiertos",
+            puntosid: "20",
+            img: "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,h_200,w_300/v1679342365/cutlery-377700_1280_pxo82d.jpg"
+        },
+
     ]
 
     const handleredimir = (puntosid) => {
@@ -52,14 +58,13 @@ const BonosRecuperador = () => {
         } else {
             setPuntos(puntos - puntosid)
         }
-
     }
 
     return (
 
         <div className="p-12">
             <div className="text-4xl font-extrabold flex justify-between">
-                <h2>Premios</h2>
+                <h2 className="text-4">Premios</h2>
                 <p>Puntos: <span>{puntos}</span> </p>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2  w-full'>
@@ -74,7 +79,7 @@ const BonosRecuperador = () => {
                                 </a>
                                 <div className="px-5 pb-5">
                                     <a href="#">
-                                        <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                        <h5 className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                             {p.nombre}</h5>
                                     </a>
 
