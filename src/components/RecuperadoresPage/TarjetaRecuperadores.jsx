@@ -14,7 +14,7 @@ const TarjetaRecuperadores = () => {
                     <Link
                         className="text-1xl"
                         to={"/recuperadores"}
-                    >Inscribete aquí</Link>
+                    >Inscríbete aquí</Link>
                     <TbClick className="text-4xl" />
                 </div>
             </div>

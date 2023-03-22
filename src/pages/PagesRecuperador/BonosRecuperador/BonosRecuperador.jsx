@@ -21,6 +21,11 @@ const BonosRecuperador = () => {
             nombre: " Iphone 13",
             puntosid: "15",
             img: "https://res.cloudinary.com/dvugueqo4/image/upload/c_scale,w_300/v1679340984/iphone-7477151_1280_urxpoc.jpg"
+        },
+        {
+            nombre: " Mercado",
+            puntosid: "35",
+            img: "https://res.cloudinary.com/dwvchf8al/image/upload/v1679447350/Demo_day_RROP/1_mercado_nsah8g.png"
         }
     ]
 
@@ -65,7 +70,7 @@ const BonosRecuperador = () => {
                         <div key={p.nombre}>
                             <div className="w-full max-w-sm border-gray-200 rounded-lg shadow bg-green-600">
                                 <a href="#">
-                                    <img className="p-8 rounded-t-lg" src={p.img} alt="product image" />
+                                    <img className="p-8 rounded-t-lg h-[200px]" src={p.img} alt="product image" />
                                 </a>
                                 <div className="px-5 pb-5">
                                     <a href="#">

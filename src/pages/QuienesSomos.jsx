@@ -18,10 +18,10 @@ const QuienesSomos = () => {
           <span className="text-green-600 font-bold">Super Eco</span> es una
           organización que busca conectar a los recuperadores de residuos
           reciclables con las empresas que buscan que sus residuos sean
-          aprovechados de una manera optima.
+          aprovechados de una manera óptima.
           <br />
           <br />
-          <p>el objetivo de Super Eco ademas de lograr alianzas entre las personas que viven del reciclaje y las empresas que generan desechos, es poder contribuir con el sistema economico del pais , el cual no esta siendo utilizado de la mejor manera , por ende, alrededor de 2 billones de pesos se estarian perdiendo en colombia por no tener claro como funciona el reciclaje, ademas de contribuir con el medio ambiente y lograr un futuro sostenible  </p>{" "}
+          <p>el objetivo de Super Eco además de lograr alianzas entre las personas que viven del reciclaje y las empresas que generan desechos, es poder contribuir con el sistema económico del país , el cual no esta siendo utilizado de la mejor manera , por ende, alrededor de <strong>2 billones de pesos se estarían perdiendo en Colombia</strong> por no tener claro cómo funciona el reciclaje, además de contribuir con el medio ambiente y lograr un futuro sostenible  </p>{" "}
         </p>
       </div>
     </div>

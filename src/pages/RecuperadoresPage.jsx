@@ -69,7 +69,7 @@ const RecuperadoresPage = () => {
                 , contamos con diferentes contenedores a lo largo de toda el área
                 metropolitana , ademas de brindarte esta facilidad , también te
                 brindamos incentivos en conjunto con las empresas que hacen parte de
-                nuestro proyecto , para inscribirte con nosotros , completa y envia el
+                nuestro proyecto , para inscribirte con nosotros , completa y envía el
                 siguiente formulario con todos tus datos y nuestros asesores se
                 pondrán en contacto contigo.{" "}
             </p>
