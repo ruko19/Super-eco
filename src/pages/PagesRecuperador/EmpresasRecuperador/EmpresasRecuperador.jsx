@@ -18,7 +18,7 @@ const EmpresasRecuperador = () => {
             "<p>Por favor acercate a nuestras oficinas en la ubicación que se encuentra en el mapa</p>",
             'info'
         )
-        setPuntos(puntos + 10)
+        setPuntos(puntos + 50)
         setTrabajoTomado(true)
     }
 
