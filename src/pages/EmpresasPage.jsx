@@ -36,7 +36,7 @@ const EmpresasPage = () => {
             Swal.fire({
                 icon: 'success',
                 title: 'Tu registro fue exitoso',
-                text: 'Pronto un asesor de comunicara con tigo',
+                text: 'Pronto un asesor de comunicará contigo',
 
             })
 

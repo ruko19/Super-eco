@@ -24,19 +24,10 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/eventos" className="mr-4 hover:underline md:mr-6 ">
-                            Eventos
-                        </Link>
+                        <NavLink to={"/recuperadores"}>Recuperadores</NavLink>
                     </li>
                     <li>
-                        <Link to="/blog" className="mr-4 hover:underline md:mr-6">
-                            Blog
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/Contacto" className="hover:underline">
-                            Contacto
-                        </Link>
+                        <NavLink to={"/empresas"}>Solicita aquí tu alianza</NavLink>
                     </li>
                 </ul>
             </div>
