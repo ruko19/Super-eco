@@ -19,7 +19,7 @@ const Home = () => {
                 {" "}
                 <span className="text-green-600 font-bold ">Super Eco</span> es una
                 organización que busca conectar a los recuperadores de residuos reciclables
-                con las empresas que buscan que sus residuos sean aprovechados de una manera optima.
+                con las empresas que buscan que sus residuos sean aprovechados de una manera óptima.
               </p>
               <div className="bg-green-600 max-w-max p-2 rounded-md text-white flex gap-8 items-center mt-8">
                 <Link
